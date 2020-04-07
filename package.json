@@ -10,10 +10,12 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,vue}\"",
     "build": "node build/build.js"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.10.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
     "vue": "^2.5.2",

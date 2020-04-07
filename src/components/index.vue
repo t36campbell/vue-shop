@@ -1,9 +1,10 @@
 <template>
   <div class="site-wrap">
-    <navbar/>
-    <hero/>
-    <services/>
-    <products/>
+    <navbar />
+    <hero />
+    <services />
+    <products />
+    <contact />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import navbar from './navbar'
 import hero from './hero'
 import services from './services'
 import products from './products'
+import contact from './contact'
 
 export default {
   name: 'index',
@@ -19,7 +21,8 @@ export default {
     navbar,
     hero,
     services,
-    products
+    products,
+    contact
   }
 }
 </script>
