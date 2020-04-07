@@ -1,23 +1,18 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <index/>
   </div>
 </template>
 
 <script>
+import index from './components/index'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    index
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #f6f6f6;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/css/style.css"></style>
