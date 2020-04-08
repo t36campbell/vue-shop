@@ -17,30 +17,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/model_1_bg.jpg"
+                src="../assets/images/imac.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
             <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+              <h3><a href="#">Apple iMac</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"
@@ -54,30 +41,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/model_2_bg.jpg"
+                src="../assets/images/ipads.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
             <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist active"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+              <h3><a href="#">Apple iPads</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"
@@ -91,30 +65,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/model_3_bg.jpg"
+                src="../assets/images/iphone.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
             <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+              <h3><a href="#">Apple iPhone 6</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"
@@ -128,30 +89,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/model_4_bg.jpg"
+                src="../assets/images/ipads-2.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
             <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+              <h3><a href="#">Apple iPads</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"
@@ -165,30 +113,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/model_5_bg.jpg"
+                src="../assets/images/macbook.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
             <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+              <h3><a href="#">Apple MacBook Pro</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"
@@ -202,30 +137,17 @@
           <div class="product-item">
             <figure>
               <img
-                src="../assets/images/product_1_bg.jpg"
+                src="../assets/images/watch.jpg"
                 alt="Image"
                 class="img-fluid"
               />
             </figure>
-            <div class="px-4">
-              <h3><a href="#">Wild West Hoodie</a></h3>
-              <div class="mb-3">
-                <span class="meta-icons mr-3"
-                  ><a href="#" class="mr-2"
-                    ><span class="icon-star text-warning"></span
-                  ></a>
-                  5.0</span
-                >
-                <span class="meta-icons wishlist"
-                  ><a href="#" class="mr-2"><span class="icon-heart"></span></a>
-                  29</span
-                >
-              </div>
+            <div class="px-6">
+              <h3><a href="#">Apple Watch Series 3</a></h3>
               <p class="mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing.
               </p>
               <div>
-                <a href="#" class="btn btn-black mr-1 rounded-0">Cart</a>
                 <a
                   href="#"
                   class="btn btn-black btn-outline-black ml-1 rounded-0"

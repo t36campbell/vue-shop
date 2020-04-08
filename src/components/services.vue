@@ -11,14 +11,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/phone.jpg"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">01.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service One</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Mobile Phone Repair</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -31,10 +31,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>
@@ -43,14 +43,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/tablet.jpg"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">02.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service Two</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Tablet Repair</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -63,10 +63,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>
@@ -75,14 +75,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/laptop.png"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">03.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service Three</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Laptop Repair</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -95,10 +95,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>
@@ -107,14 +107,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/desktop.jpg"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">04.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service Four</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Desktop Computer Repair</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -127,10 +127,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>
@@ -139,14 +139,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/pc.png"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">05.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service Five</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Custom PC Builds</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -159,10 +159,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>
@@ -171,14 +171,14 @@
         <div class="row mx-4 my-4 product-item-2 align-items-start">
           <div class="col-md-4 mb-5 mb-md-0">
             <img
-              src="../assets/images/model_1_bg.jpg"
+              src="../assets/images/server.jpg"
               alt="Image"
               class="img-fluid"
             />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <span class="number">06.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Service Six</h3>
+            <h3 class="text-black mb-4 font-weight-bold">Server Builds & Installs</h3>
             <p class="mb-4">
               Et tempora id nostrum saepe amet doloribus deserunt totam officiis
               cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -191,10 +191,10 @@
             </p>
             <p>
               <a
-                href="#"
-                class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block"
-                >View Details</a
-              >
+                  href="#contact-section"
+                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  >Schedule an Appointment</a
+                >
             </p>
           </div>
         </div>

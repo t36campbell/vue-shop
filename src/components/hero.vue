@@ -1,12 +1,11 @@
 <template>
   <div
     class="site-blocks-cover overlay"
-    data-aos="fade"
-    data-stellar-background-ratio="0.5"
   >
+    <navbar />
     <div class="container">
       <div class="row align-items-center justify-content-center">
-        <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-md-12">
           <div class="row mb-4">
             <div class="col-md-7">
               <h1>Bob's Electronic Repair</h1>
@@ -31,7 +30,11 @@
 </template>
 
 <script>
+import navbar from './navbar'
 export default {
-  name: 'hero'
+  name: 'hero',
+  components: {
+    navbar
+  }
 }
 </script>
