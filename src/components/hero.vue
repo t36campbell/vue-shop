@@ -5,11 +5,12 @@
         <div class="col-md-11">
           <div class="row mb-6">
             <div class="col-md-8">
-              <h1 class="hero">Bob's Electronic Repair</h1>
+              <h1 class="hero">Bob's Electronics Repair</h1>
               <p class="mb-5 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam assumenda ea quo cupiditate facere deleniti fuga
-                officia.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
+                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
+                Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
               </p>
               <div>
                 <a
