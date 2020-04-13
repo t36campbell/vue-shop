@@ -1,19 +1,20 @@
 <template>
   <div class="site-blocks-cover overlay">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
+    <div class="container window mx-auto">
+      <div class="row h-auto justify-content-center align-items-center">
         <div class="col-md-11">
           <div class="row mb-6">
             <div class="col-md-8">
               <h1 class="hero">Bob's Electronic Repair</h1>
               <p class="mb-5 lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam assumenda ea quo cupiditate facere deleniti fuga
-                officia.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
+                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
+                Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
               </p>
               <div>
                 <a
-                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  class="btn btn-black btn-outline-black py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
                   href="#contact-section"
                   v-smooth-scroll
                 >Schedule an Appointment</a>
@@ -101,9 +102,9 @@ h5 {
   height: calc(100vh);
 }
 .site-blocks-cover h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
-  color: var(--gray-1);
+  color: var(--gray-5);
   font-weight: 900;
 }
 @media (max-width: 991.98px) {
@@ -112,10 +113,10 @@ h5 {
   }
 }
 .site-blocks-cover p {
-  color: var(--gray-1);
+  color: var(--gray-5);
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 600;
 }
 .site-blocks-cover p.lead {
   font-size: 20px;
@@ -126,5 +127,18 @@ h5 {
 }
 .block-12 {
   position: relative;
+}
+.window {
+  top: 20%;
+  border-radius: 12px;
+  border: 10px solid white;
+  border-style: double;
+  margin: 2rem;
+  padding: 2rem;
+  background-clip: padding-box;
+  background-color: hsla(240, 67%, 94%,0.6);
+}
+.hero {
+  color: var(--gray-5);
 }
 </style>

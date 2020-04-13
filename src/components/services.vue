@@ -1,7 +1,7 @@
 <template>
-  <div class="site-section bg-light" id="services-section">
-    <div class="container">
-      <div class="row mb-5">
+  <div class="site-section bg-dark" id="services-section">
+    <div class="container window mx-auto">
+      <div class="row mb-5 justify-content-center align-items-center">
         <div class="col-12 text-center">
           <h3 class="section-sub-title">Our Services</h3>
           <h2 class="section-title mb-3">We Offer Services</h2>
@@ -326,5 +326,15 @@ export default {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.window {
+  position: relative;
+  border-radius: 12px;
+  border: 10px solid white;
+  border-style: double;
+  margin: 2rem;
+  padding: 2rem;
+  background-clip: padding-box;
+  background-color: hsla(240, 67%, 94%,0.6);
 }
 </style>

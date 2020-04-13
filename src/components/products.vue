@@ -1,7 +1,7 @@
 <template>
-  <div class="site-section" id="products-section">
-    <div class="container">
-      <div class="row mb-5 justify-content-center">
+  <div class="site-section bg-dark" id="products-section">
+    <div class="container window mx-auto">
+      <div class="row mb-5 justify-content-center align-items-center">
         <div class="col-md-6 text-center">
           <h3 class="section-sub-title">Popular Products</h3>
           <h2 class="section-title mb-3">Our Products</h2>
@@ -61,7 +61,7 @@
               <img src="../assets/images/ipads-2.jpg" alt="Image" class="img-fluid" />
             </figure>
             <div class="px-4">
-              <h3>>Apple iPads</h3>
+              <h3>Apple iPads</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
                 <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
@@ -120,7 +120,6 @@ export default {
 }
 .site-section {
   padding: 2.5em 0;
-  background: var(--white);
 }
 @media (min-width: 768px) {
   .site-section {
@@ -167,6 +166,7 @@ export default {
   transform: scale(1.05);
   position: absolute;
   content: '';
+  border-radius: 12px;
   border: 4px solid var(--gray-1);
   left: 20px;
   right: 20px;
@@ -211,5 +211,14 @@ export default {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.window {
+  border-radius: 12px;
+  border: 10px solid white;
+  border-style: double;
+  margin: 2rem;
+  padding: 2rem;
+  background-clip: padding-box;
+  background-color: hsla(240, 67%, 94%,0.6);
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
-  <div class="site-section bg-light" id="contact-section">
-    <div class="container">
-      <div class="row mb-5">
+  <div class="site-section bg-dark justify-content-center" id="contact-section">
+    <div class="container window mx-auto">
+      <div class="row mb-5 justify-content-center align-items-center">
         <div class="col-12 text-center">
           <h3 class="section-sub-title">Contact Form</h3>
           <h2 class="section-title mb-3">Get In Touch</h2>
         </div>
         <div class="col-12">
-          <form action="#" class="p-5 bg-white">
+          <form action="#" class="p-5">
             <h2 class="h4 text-black mb-5 text-center">Location & Hours</h2>
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-12">
@@ -195,5 +195,14 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.window {
+  border-radius: 12px;
+  border: 10px solid white;
+  border-style: double;
+  margin: 2rem;
+  padding: 2rem;
+  background-clip: padding-box;
+  background-color: hsla(240, 67%, 94%,0.6);
 }
 </style>
