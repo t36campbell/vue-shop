@@ -7,7 +7,7 @@
           <h2 class="section-title mb-3">Get In Touch</h2>
         </div>
         <div class="col-12">
-          <form action="#" class="p-5 bg-white">
+          <form action="#" class="p-5">
             <h2 class="h4 text-black mb-5 text-center">Location & Hours</h2>
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-12">

@@ -61,7 +61,7 @@
               <img src="../assets/images/ipads-2.jpg" alt="Image" class="img-fluid" />
             </figure>
             <div class="px-4">
-              <h3>>Apple iPads</h3>
+              <h3>Apple iPads</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
                 <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
