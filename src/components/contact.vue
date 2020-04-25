@@ -45,7 +45,7 @@
                   class="mb-2" 
                   v-model="form.date" 
                   :min="min"
-                  :state="false"
+                  :state="validateState('date')"
                 ></b-form-datepicker>
               </div>
             </div>
@@ -62,8 +62,7 @@
                       id="fname"
                       class="col-md-12 form-control rounded-0"
                       v-model="form.fname"
-                      :state="false"
-                      required
+                      :state="validateState('fname')"
                       placeholder="Enter Your First Name"
                     ></b-form-input>
                   </b-form-group>
@@ -79,8 +78,7 @@
                       id="lname"
                       class="col-md-12 form-control rounded-0"
                       v-model="form.lname"
-                      :state="false"
-                      required
+                      :state="validateState('lname')"
                       placeholder="Enter Your Last Name"
                     ></b-form-input>
                   </b-form-group>
@@ -96,8 +94,7 @@
                       id="phone"
                       class="col-md-12 form-control rounded-0"
                       v-model="form.phone"
-                      :state="false"
-                      required
+                      :state="validateState('phone')"
                       placeholder="Enter Your Phone Number"
                     ></b-form-input>
                   </b-form-group>
@@ -114,8 +111,7 @@
                       class="col-md-12 form-control rounded-0"
                       v-model="form.email"
                       type="email"
-                      :state="false"
-                      required
+                      :state="validateState('email')"
                       placeholder="Enter Your Email"
                     ></b-form-input>
                   </b-form-group>
@@ -131,8 +127,7 @@
                       id="device"
                       class="col-md-12 form-control rounded-0"
                       v-model="form.device"
-                      :state="false"
-                      required
+                      :state="validateState('date')"
                       placeholder="Enter the Name of Your Device"
                     ></b-form-input>
                   </b-form-group>
@@ -147,7 +142,6 @@
                       v-model="selected"
                       name="selected-service"
                       value="A"
-                      required
                     >Cell Phone Repair</b-form-radio>
                     <br />
                     <b-form-radio v-model="selected" name="selected-service" value="B">Tablet Repair</b-form-radio>
