@@ -41,7 +41,7 @@
               <h2 class="h4 text-black mb-5 text-center">Schedule an Appointment</h2>
               <div class="row justify-content-center form-group">
                 <div class="col-md-6 col-sm-12">
-                  <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2"></b-form-datepicker>
+                  <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2" required/>
                 </div>
               </div>
               <div class="row">
@@ -49,32 +49,32 @@
                   <div class="row form-group">
                     <div class="col-md-12">
                       <label class="text-black" for="fname">First Name</label>
-                      <input type="text" id="fname" class="form-control rounded-0" />
+                      <input type="text" id="fname" class="form-control rounded-0" required/>
                     </div>
                   </div>
                   <div class="row form-group">
                     <div class="col-md-12">
                       <label class="text-black" for="lname">Last Name</label>
-                      <input type="text" id="lname" class="form-control rounded-0" />
+                      <input type="text" id="lname" class="form-control rounded-0" required/>
                     </div>
                   </div>
                   <div class="row form-group">
                     <div class="col-md-12">
                       <label class="text-black" for="phone">Phone</label>
-                      <input type="phone" id="phone" class="form-control rounded-0" />
+                      <input type="phone" id="phone" class="form-control rounded-0" required/>
                     </div>
                   </div>
                   <div class="row form-group">
                     <div class="col-md-12">
                       <label class="text-black" for="email">Email</label>
-                      <input type="email" id="email" class="form-control rounded-0" />
+                      <input type="email" id="email" class="form-control rounded-0" required/>
                     </div>
                   </div>
 
                   <div class="row form-group">
                     <div class="col-md-12">
                       <label class="text-black" for="subject">Device Name</label>
-                      <input type="subject" id="subject" class="form-control rounded-0" />
+                      <input type="subject" id="subject" class="form-control rounded-0" required/>
                     </div>
                   </div>
                 </div>
@@ -87,6 +87,7 @@
                         v-model="selected"
                         name="some-radios"
                         value="A"
+                        required=""
                       >Cell Phone Repair</b-form-radio>
                       <br />
                       <b-form-radio v-model="selected" name="some-radios" value="B">Tablet Repair</b-form-radio>

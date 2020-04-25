@@ -9,7 +9,8 @@
     </button>
 
     <div
-      class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-12 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-start mobileMenu"
+      class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-12 mt-lg-0 
+      d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-start mobileMenu"
       id="navbar"
     >
       <b-navbar-nav class="navbar-nav align-self-stretch">
