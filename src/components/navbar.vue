@@ -1,27 +1,41 @@
 <template>
-  <b-navbar
-    class="nav"
-    toggleable="lg"
-    type="dark"
-    sticky
+<div>
+  <nav
+  class="nav navbar-nav navbar-expand-lg navbar-dark bg-dark fixed-top"
   >
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-    <b-collapse
-      class="col-12"
-      id="nav-collapse"
-      is-nav
+  <div class="container-fluid">
+    <button class="navbar-toggler align-self-start" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-12 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-start mobileMenu"
+      id="navbar"
     >
-      <b-navbar-nav>
+      <b-navbar-nav class="navbar-nav align-self-stretch">
         <b-nav-item><a href="#app" v-smooth-scroll><h3 class="nav-link">Home</h3></a></b-nav-item>
         <b-nav-item><a href="#services-section" v-smooth-scroll><h3 class="nav-link">Services</h3></a></b-nav-item>
         <b-nav-item><a href="#products-section" v-smooth-scroll><h3 class="nav-link">Products</h3></a></b-nav-item>
         <b-nav-item><a href="#contact-section" v-smooth-scroll><h3 class="nav-link">Contact</h3></a></b-nav-item>
       </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+    </div>
+  </div>
+</nav>
+</div>
 </template>
 
 <script>
+$(document).ready(function() {
+  const $menu = $('.mobileMenu');
+  const $toggle = $('.navbar-toggler');
+
+  $toggle.on('click', () => {
+    $menu.toggleClass('open');
+  });
+  $menu.on('click', () => {
+      $menu.toggleClass('open');
+  });
+});
 export default {
   name: 'navbar'
 }
@@ -41,5 +55,30 @@ export default {
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--gray-1);
+}
+@media (max-width: 992px) {
+  .mobileMenu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    position: absolute;
+    height: 100vh;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+  }
+  .mobileMenu.open {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    width: 25cw;
+  }
+  @media (max-width: 768px) { 
+  .mobileMenu.open {
+      width: 50vw;
+    }
+  }
+  @media (max-width: 576px) { 
+  .mobileMenu.open {
+      width: 100vw;
+    }
+  }
 }
 </style>

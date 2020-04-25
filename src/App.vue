@@ -6,13 +6,11 @@
 </template>
 
 <script>
-import navbar from './components/navbar'
 import index from './components/index'
 
 export default {
   name: 'App',
   components: {
-    navbar,
     index
   }
 }
