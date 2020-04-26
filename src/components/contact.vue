@@ -40,129 +40,130 @@
             <h2 class="h4 text-black mb-5 text-center">Schedule an Appointment</h2>
             <div class="row justify-content-center form-group">
               <div class="col-md-6 col-sm-12">
-                <b-form-datepicker 
-                  id="datepicker" 
-                  class="mb-2" 
-                  v-model="form.date" 
-                  :min="min"
-                  :state="validateState('date')"
-                ></b-form-datepicker>
+                <b-form-group
+                    id="input-group-1"
+                    class="col-md-12 text-black"
+                    label="Select a Date"
+                    label-for="datepicker"
+                  >
+                  <b-form-datepicker
+                    id="datepicker"
+                    class="mb-2"
+                    v-model="$v.form.date.$model"
+                    :state="validateState('date')"
+                  ></b-form-datepicker>
+                  <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+                </b-form-group>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
-                  <b-form-group 
-                    id="input-group-1" 
+                  <b-form-group
+                    id="input-group-1"
                     class="col-md-12 text-black"
-                    label="First Name:" 
+                    label="First Name:"
                     label-for="fname"
                   >
                     <b-form-input
                       id="fname"
                       class="col-md-12 form-control rounded-0"
-                      v-model="form.fname"
+                      v-model="$v.form.fname.$model"
                       :state="validateState('fname')"
                       placeholder="Enter Your First Name"
                     ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
                 <div class="row form-group">
-                  <b-form-group 
-                    id="input-group-2" 
+                  <b-form-group
+                    id="input-group-2"
                     class="col-md-12 text-black"
-                    label="Last Name:" 
+                    label="Last Name:"
                     label-for="lname"
                   >
                     <b-form-input
                       id="lname"
                       class="col-md-12 form-control rounded-0"
-                      v-model="form.lname"
+                      v-model="$v.form.lname.$model"
                       :state="validateState('lname')"
                       placeholder="Enter Your Last Name"
                     ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
                 <div class="row form-group">
-                  <b-form-group 
-                    id="input-group-3" 
+                  <b-form-group
+                    id="input-group-3"
                     class="col-md-12 text-black"
-                    label="Phone:" 
+                    label="Phone:"
                     label-for="phone"
                   >
                     <b-form-input
                       id="phone"
                       class="col-md-12 form-control rounded-0"
-                      v-model="form.phone"
+                      v-model="$v.form.phone.$model"
                       :state="validateState('phone')"
                       placeholder="Enter Your Phone Number"
                     ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
                 <div class="row form-group">
-                  <b-form-group 
-                    id="input-group-4" 
+                  <b-form-group
+                    id="input-group-4"
                     class="col-md-12 text-black"
-                    label="Email:" 
+                    label="Email:"
                     label-for="email"
                   >
                     <b-form-input
                       id="email"
                       class="col-md-12 form-control rounded-0"
-                      v-model="form.email"
+                      v-model="$v.form.email.$model"
                       type="email"
                       :state="validateState('email')"
                       placeholder="Enter Your Email"
                     ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
                 <div class="row form-group">
-                  <b-form-group 
-                    id="input-group-5" 
+                  <b-form-group
+                    id="input-group-5"
                     class="col-md-12 text-black"
-                    label="Device Name:" 
+                    label="Device Name:"
                     label-for="device"
                   >
                     <b-form-input
                       id="device"
                       class="col-md-12 form-control rounded-0"
-                      v-model="form.device"
-                      :state="validateState('date')"
+                      v-model="$v.form.device.$model"
+                      :state="validateState('device')"
                       placeholder="Enter the Name of Your Device"
                     ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <b-form-group class="text-black">
-                  <div class="col-md-12">
-                    <h6>Select a Service</h6>
-                    <br />
-                    <b-form-radio
-                      v-model="selected"
-                      name="selected-service"
-                      value="A"
-                    >Cell Phone Repair</b-form-radio>
-                    <br />
-                    <b-form-radio v-model="selected" name="selected-service" value="B">Tablet Repair</b-form-radio>
-                    <br />
-                    <b-form-radio v-model="selected" name="selected-service" value="C">Laptop Repair</b-form-radio>
-                    <br />
-                    <b-form-radio v-model="selected" name="selected-service" value="D">Computer Repair</b-form-radio>
-                    <br />
-                    <b-form-radio v-model="selected" name="selected-service" value="E">Custom PC Builds</b-form-radio>
-                    <br />
-                    <b-form-radio
-                      v-model="selected"
-                      name="selected-service"
-                      value="F"
-                    >Server Builds & Installs</b-form-radio>
-                    <br />
-                  </div>
+                <b-form-group
+                    id="input-group-6"
+                    class="col-md-12 text-black"
+                    label="Select a Date"
+                    label-for="input-group-6"
+                  > 
+                    <b-form-radio-group
+                      id="radio-group-1"
+                      v-model="$v.form.service.$model"
+                      :options="options"
+                      :state="validateState('service')"
+                      stacked
+                    ></b-form-radio-group>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                 </b-form-group>
               </div>
-              <div class="col-md-12 text-center">    
-                <b-button type="submit" variant="primary">Submit</b-button>
+              <div class="col-md-12 text-center">
+                <b-button type="submit" variant="dark">Submit</b-button>
               </div>
             </div>
           </b-form>
@@ -173,62 +174,75 @@
 </template>
 
 <script>
-import { validationMixin } from "vuelidate"; 
-import { required, minLength } from "vuelidate/lib/validators";
+import { validationMixin } from 'vuelidate'
+import { required, email, minValue} from 'vuelidate/lib/validators'
 export default {
   name: 'contact',
+  mixins: [validationMixin],
   data() {
-      const now = new Date()
-      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-      // 15th two months prior
-      const minDate = new Date(today)
-      minDate.setMonth(minDate.getMonth() - 2)
-      minDate.setDate(15)
+    const now = new Date()
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
 
-      return {
-        min: minDate,
-        form: {
-          date: null,
-          fname: null,
-          lname: null,
-          phone: null,
-          email: null,
-          device: null,
-          selected: null
-        }
-      }
-  },   
+    return {
+      form: {
+        date: null,
+        fname: null,
+        lname: null,
+        phone: null,
+        email: null,
+        device: null,
+        service: null
+      },
+      options: [
+          { text: 'Mobile Phone Repair', value: 'mobile' },
+          { text: 'Tablet Repair', value: 'tablet' },
+          { text: 'Laptop Repair', value: 'laptop'},
+          { text: 'Computer Repair', value: 'pc'},
+          { text: 'Custom PC Builds', value: 'pc-build' },
+          { text: 'Server Builds & Installs', value: 'server'}
+        ]
+    }
+  },
   validations: {
     form: {
       date: {
-        
+        required
       },
       fname: {
-        
+        required
       },
       lname: {
-        
+        required
       },
       phone: {
-        
+        required
       },
       email: {
-        
+        required,
+        email
       },
       device: {
-        
+        required
       },
-      selected: {
-        
+      service: {
+        required
       }
     }
-  }, 
+  },
   methods: {
-      onSubmit(evt) {
-        evt.preventDefault()
-        alert(JSON.stringify(this.form))
+    validateState(name) {
+      const { $dirty, $error } = this.$v.form[name]
+      return $dirty ? !$error : null
+    },
+    onSubmit(evt) {
+      evt.preventDefault();
+      this.$v.form.$touch();
+      if (this.$v.form.$anyError) {
+        return;
       }
-  }     
+      alert("Form submitted!\n" + JSON.stringify(this.form))
+    }
+  }
 }
 </script>
 

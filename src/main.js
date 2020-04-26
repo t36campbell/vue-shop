@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'
+import Vuelidate from 'vuelidate'
 import $ from 'jquery'
 import App from './App'
 import 'bootstrap'
@@ -12,6 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(vueSmoothScroll)
+Vue.use(Vuelidate)
 Vue.use($)
 /* eslint-disable no-new */
 new Vue({
