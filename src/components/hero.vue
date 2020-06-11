@@ -15,7 +15,7 @@
               <div>
                 <a
                   class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
-                  href="#contact-section"
+                  href="#schedule"
                   v-smooth-scroll
                 >Schedule an Appointment</a>
               </div>

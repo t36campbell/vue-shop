@@ -36,31 +36,53 @@
             </div>
           </div>
           <br />
-          <b-form @submit="onSubmit" class="col-12" id="contact">
+          <b-form @submit="onSubmit" class="col-12" id="schedule">
             <h2 class="h4 text-black mb-5 text-center">Schedule an Appointment</h2>
-            <div class="row justify-content-center form-group">
+            <div class="row">
               <div class="col-md-6 col-sm-12">
-                <b-form-group
-                    id="input-group-1"
-                    class="col-md-12 text-black"
-                    label="Select a Date"
-                    label-for="datepicker"
-                  >
-                  <b-form-datepicker
-                    id="datepicker"
-                    class="mb-2"
-                    v-model="$v.form.date.$model"
-                    :state="validateState('date')"
-                  ></b-form-datepicker>
-                  <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
-                </b-form-group>
+                <div class="row form-group">  
+                  <b-form-group
+                      id="input-group-1"
+                      class="col-md-12 text-black"
+                      label="Select a Date"
+                      label-for="datepicker"
+                    >
+                    <b-form-datepicker
+                      id="datepicker"
+                      class="mb-2"
+                      v-model="$v.form.date.$model"
+                      :state="validateState('date')"
+                      ></b-form-datepicker>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+                  </b-form-group>
+                </div>
+              </div>  
+              <div class="col-md-6 col-sm-12">
+                <div class="row form-group"> 
+                  <b-form-group
+                      id="input-group-2"
+                      class="col-md-12 text-black"
+                      label="Select a Time"
+                      label-for="timepicker"
+                    >
+                    <b-form-timepicker
+                      id="timepicker"
+                      class="mb-2"
+                      locale="en-US"
+                      v-model="$v.form.time.$model"
+                      :state="validateState('time')"
+                      ></b-form-timepicker>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+                  </b-form-group>
+                </div>
               </div>
             </div>
+            <hr>
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
                   <b-form-group
-                    id="input-group-1"
+                    id="input-group-3"
                     class="col-md-12 text-black"
                     label="First Name:"
                     label-for="fname"
@@ -75,9 +97,11 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-                <div class="row form-group">
+              </div>  
+              <div class="col-md-6 col-sm-12">
+                <div class="row form-group">   
                   <b-form-group
-                    id="input-group-2"
+                    id="input-group-4"
                     class="col-md-12 text-black"
                     label="Last Name:"
                     label-for="lname"
@@ -92,9 +116,11 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
                   <b-form-group
-                    id="input-group-3"
+                    id="input-group-5"
                     class="col-md-12 text-black"
                     label="Phone:"
                     label-for="phone"
@@ -109,9 +135,11 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-                <div class="row form-group">
+              </div>  
+              <div class="col-md-6 col-sm-12">
+                <div class="row form-group">   
                   <b-form-group
-                    id="input-group-4"
+                    id="input-group-6"
                     class="col-md-12 text-black"
                     label="Email:"
                     label-for="email"
@@ -127,29 +155,50 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
+              </div> 
+            </div>
+            <hr>
+            <div class="row"> 
+              <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
                   <b-form-group
-                    id="input-group-5"
+                    id="input-group-7"
                     class="col-md-12 text-black"
-                    label="Device Name:"
-                    label-for="device"
+                    label="Device Manufacturer:"
+                    label-for="device-man"
                   >
                     <b-form-input
-                      id="device"
+                      id="device-man"
                       class="col-md-12 form-control rounded-0"
-                      v-model="$v.form.device.$model"
-                      :state="validateState('device')"
+                      v-model="$v.form.device_man.$model"
+                      :state="validateState('device_man')"
+                      placeholder="Enter the Name of Your Device"
+                    ></b-form-input>
+                    <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+                  </b-form-group>
+                  <b-form-group
+                    id="input-group-8"
+                    class="col-md-12 text-black"
+                    label="Device Model:"
+                    label-for="device-mod"
+                  >
+                    <b-form-input
+                      id="device-mod"
+                      class="col-md-12 form-control rounded-0"
+                      v-model="$v.form.device_mod.$model"
+                      :state="validateState('device_mod')"
                       placeholder="Enter the Name of Your Device"
                     ></b-form-input>
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div>
+              </div>  
               <div class="col-md-6 col-sm-12">
+                <div class="row form-group">   
                 <b-form-group
-                    id="input-group-6"
+                    id="input-group-9"
                     class="col-md-12 text-black"
-                    label="Select a Date"
+                    label="Select a Service"
                     label-for="input-group-6"
                   > 
                     <b-form-radio-group
@@ -161,6 +210,7 @@
                     ></b-form-radio-group>
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                 </b-form-group>
+                </div>
               </div>
               <div class="col-md-12 text-center">
                 <b-button type="submit" variant="dark">Submit</b-button>
@@ -177,7 +227,7 @@
 import { validationMixin } from 'vuelidate'
 import { required, email, minValue} from 'vuelidate/lib/validators'
 export default {
-  name: 'contact',
+  name: 'schedule',
   mixins: [validationMixin],
   data() {
     const now = new Date()
@@ -186,11 +236,13 @@ export default {
     return {
       form: {
         date: null,
+        time: null,
         fname: null,
         lname: null,
         phone: null,
         email: null,
-        device: null,
+        device_man: null,
+        device_mod: null,
         service: null
       },
       options: [
@@ -208,6 +260,9 @@ export default {
       date: {
         required
       },
+      time: {
+        required
+      },
       fname: {
         required
       },
@@ -221,7 +276,10 @@ export default {
         required,
         email
       },
-      device: {
+      device_man: {
+        required
+      },
+      device_mod: {
         required
       },
       service: {

@@ -28,7 +28,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>
@@ -56,7 +56,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>
@@ -84,7 +84,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>
@@ -112,7 +112,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>
@@ -140,7 +140,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>
@@ -168,7 +168,7 @@
             <p>
               <a
                 class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#contact-section"
+                href="#schedule"
                 v-smooth-scroll
               >Schedule an Appointment</a>
             </p>

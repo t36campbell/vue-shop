@@ -4,6 +4,7 @@
     <hero />
     <services />
     <products />
+    <tutorials />
     <contact />
   </div>
 </template>
@@ -13,6 +14,7 @@ import navbar from './navbar'
 import hero from './hero'
 import services from './services'
 import products from './products'
+import tutorials from './tutorials'
 import contact from './contact'
 
 export default {
@@ -22,6 +24,7 @@ export default {
     hero,
     services,
     products,
+    tutorials,
     contact
   }
 }
