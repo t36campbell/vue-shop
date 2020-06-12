@@ -11,16 +11,7 @@
           <div class="row justify-content-center">
             <div class="col-md-6 col-sm-12">
               <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7230655754465!2d-82.4875402846048!3d40.39282997936799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8839cb5288c441cb%3A0xe990c0740358c806!2sENew%20Zone%20Computer%20Shop!5e0!3m2!1sen!2sus!4v1586365486553!5m2!1sen!2sus"
-                  width="300"
-                  height="300"
-                  frameborder="0"
-                  style="border:0;"
-                  allowfullscreen
-                  aria-hidden="false"
-                  tabindex="0"
-                ></iframe>
+                <gmap />
               </div>
             </div>
             <div class="col-md-6 col-sm-12 text-justify">
@@ -226,8 +217,12 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, email, minValue} from 'vuelidate/lib/validators'
+import gmap from "./gmap"
 export default {
   name: 'schedule',
+  components: {
+    gmap
+  },
   mixins: [validationMixin],
   data() {
     const now = new Date()
