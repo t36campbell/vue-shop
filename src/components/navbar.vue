@@ -17,6 +17,7 @@
         <b-nav-item><a href="#app" v-smooth-scroll><h3 class="nav-link">Home</h3></a></b-nav-item>
         <b-nav-item><a href="#services-section" v-smooth-scroll><h3 class="nav-link">Services</h3></a></b-nav-item>
         <b-nav-item><a href="#products-section" v-smooth-scroll><h3 class="nav-link">Products</h3></a></b-nav-item>
+        <b-nav-item><a href="#teardowns-section" v-smooth-scroll><h3 class="nav-link">Teardowns</h3></a></b-nav-item>
         <b-nav-item><a href="#contact-section" v-smooth-scroll><h3 class="nav-link">Contact</h3></a></b-nav-item>
       </b-navbar-nav>
     </div>
