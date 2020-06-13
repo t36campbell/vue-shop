@@ -2,33 +2,13 @@
   <div class="site-section bg-light" id="contact-section">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-12 text-center">
-          <h3 class="section-sub-title">Contact Form</h3>
-          <h2 class="section-title mb-3">Get In Touch</h2>
-        </div>
         <div class="col-12">
-          <h2 class="h4 text-black mb-5 text-center">Location & Hours</h2>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-sm-12">
-              <div class="map-container">
-                <gmap />
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 text-justify">
-              <br />
-              <h6 class="text-black">Address</h6>
-              <p>1234 Main St.</p>
-              <p>Small-Town OH 45701</p>
-              <h6 class="text-black">Hours</h6>
-              <p>Monday - Friday</p>
-              <p>9:00 AM - 5:30 PM</p>
-              <h6 class="text-black">Phone</h6>
-              <p>555.123.4567</p>
-            </div>
-          </div>
-          <br />
+          <h3 class="section-sub-title text-center">Store Locator</h3>
+          <h2 class="section-title text-center mb-3">Find Nearest Location</h2>
+          <gmap />       
+          <h3 class="section-sub-title text-center">Contact Form</h3>
+          <h2 class="section-title text-center mb-3">Schedule an Appointment</h2>
           <b-form @submit="onSubmit" class="col-12" id="schedule">
-            <h2 class="h4 text-black mb-5 text-center">Schedule an Appointment</h2>
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">  
@@ -351,19 +331,5 @@ export default {
   .section-title {
     font-size: 30px;
   }
-}
-.map-container {
-  position: relative;
-  padding-bottom: 90%;
-  padding-top: 35px;
-  height: 0;
-  overflow: hidden;
-}
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>
