@@ -1,10 +1,10 @@
 <template>
-  <div class="site-blocks-cover overlay" id="teardowns-section">
+  <div class="site-section bg-light" id="teardowns-section">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12 text-center pull-down">
-          <h3 class="tut-sub-title">Popular Teardowns</h3>
-          <h2 class="tut-title mb-3">Device Teardowns</h2>
+          <h3 class="section-sub-title">Popular Teardowns</h3>
+          <h2 class="section-title mb-3">Device Teardowns</h2>
           <br><br>
           <b-tabs
             content-class="mt-3" 
@@ -56,7 +56,7 @@
                 allowfullscreen
               ></b-embed>
             </b-tab>
-            <b-tab title="MacBook Pro 16" title-link-class="tab">
+            <b-tab title="MacBook Pro" title-link-class="tab">
               <h3 class="tab-title">MacBook Pro 16" 2019 Teardown</h3>
               <p class="mb-5 text-justify lead ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -94,20 +94,8 @@ export default {
   --gray-5: #2f2f2f;
   --green: #005a34;
 }
-.tut-sub-title {
-  font-size: 13px;
-  color: var(--gray-5);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.tut-title {
-  color: var(--gray-1);
-  font-size: 40px;
-  font-weight: 900;
-}
 .tab-title {
-  color: var(--gray-1);
+  color: var(--gray-5);
   font-weight: 700;
 }
 .tab{

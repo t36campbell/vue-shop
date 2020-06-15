@@ -1,5 +1,5 @@
 <template>
-  <div class="site-section bg-light" id="contact-section">
+  <div class="site-section" id="contact-section">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">
