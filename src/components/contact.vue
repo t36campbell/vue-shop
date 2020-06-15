@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">
-          <h3 class="section-sub-title text-center">Store Locator</h3>
+          <h3 class="section-sub-title text-center">Store Locater</h3>
           <h2 class="section-title text-center mb-3">Find Nearest Location</h2>
           <gmap />       
           <h3 class="section-sub-title text-center">Contact Form</h3>
