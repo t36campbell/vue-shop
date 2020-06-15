@@ -6,9 +6,9 @@
           <h3 class="section-sub-title text-center">Store Locater</h3>
           <h2 class="section-title text-center mb-3">Find Nearest Location</h2>
           <gmap />       
-          <h3 class="section-sub-title text-center">Contact Form</h3>
+          <h3 class="section-sub-title text-center" id="schedule">Contact Form</h3>
           <h2 class="section-title text-center mb-3">Schedule an Appointment</h2>
-          <b-form @submit="onSubmit" class="col-12" id="schedule">
+          <b-form @submit="onSubmit" class="col-12">
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">  
