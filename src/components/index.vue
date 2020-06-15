@@ -3,6 +3,7 @@
     <navbar />
     <hero />
     <services />
+    <testimonials />
     <products />
     <teardowns />
     <gmap />
@@ -14,6 +15,7 @@
 import navbar from './navbar'
 import hero from './hero'
 import services from './services'
+import testimonials from './testimonials'
 import products from './products'
 import teardowns from './teardowns'
 import gmap from "./gmap"
@@ -25,6 +27,7 @@ export default {
     navbar,
     hero,
     services,
+    testimonials,
     products,
     teardowns,
     gmap,
