@@ -1,12 +1,9 @@
 <template>
-  <div class="site-section" id="contact-section">
+  <div class="site-section bg-light" id="schedule">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">
-          <h3 class="section-sub-title text-center">Store Locater</h3>
-          <h2 class="section-title text-center mb-3">Find Nearest Location</h2>
-          <gmap />       
-          <h3 class="section-sub-title text-center" id="schedule">Contact Form</h3>
+          <h3 class="section-sub-title text-center">Contact Form</h3>
           <h2 class="section-title text-center mb-3">Schedule an Appointment</h2>
           <b-form @submit="onSubmit" class="col-12">
             <div class="row">
@@ -197,12 +194,8 @@
 <script>
 import { validationMixin } from 'vuelidate'
 import { required, email, minValue} from 'vuelidate/lib/validators'
-import gmap from "./gmap"
 export default {
   name: 'schedule',
-  components: {
-    gmap
-  },
   mixins: [validationMixin],
   data() {
     const now = new Date()

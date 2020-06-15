@@ -5,6 +5,7 @@
     <services />
     <products />
     <teardowns />
+    <gmap />
     <contact />
   </div>
 </template>
@@ -15,6 +16,7 @@ import hero from './hero'
 import services from './services'
 import products from './products'
 import teardowns from './teardowns'
+import gmap from "./gmap"
 import contact from './contact'
 
 export default {
@@ -25,6 +27,7 @@ export default {
     services,
     products,
     teardowns,
+    gmap,
     contact
   }
 }
