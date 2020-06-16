@@ -167,8 +167,8 @@ export default {
     }
   },
   mounted() {
-    if(localStorage.isBig) this.isBig = localStorage.isBig;
-    if(localStorage.zoom) this.zoom = localStorage.zoom;
+    if(localStorage.isBig) this.isBig = JSON.parse(localStorage.isBig);
+    if(localStorage.zoom) this.zoom = Number(localStorage.zoom);
     if (localStorage.getItem('currentPlace')) {
       try {
         this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'));
@@ -187,7 +187,7 @@ export default {
       try {
         let recents = JSON.parse(localStorage.getItem('places'))
         this.places = recents;
-        this.markers.map(recents);
+        this.markers.push(...recents);
       } catch(e) {
         localStorage.removeItem('places');
       }
