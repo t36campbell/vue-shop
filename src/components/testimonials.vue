@@ -5,6 +5,7 @@
         <div class="col-12">
           <h3 class="section-sub-title text-center">Testimonials</h3>
           <h2 class="section-title text-center mb-3">Customer Reviews</h2>
+          <br />
           <b-card-group deck>
             <b-card
               border-variant="dark"
@@ -21,7 +22,7 @@
                   ></b-card-img-lazy>
                 </b-col>
                 <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
+                  <b-card-body body-class="text-center" title="John Doe">
                     <b-form-rating
                       id="r1"
                       variant="warning"
@@ -29,10 +30,12 @@
                       class="bg-transparent"
                       no-border
                       readonly
+                      show-value
+                      show-value-max
                     ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
+                    <b-card-text class="text-justify">
+                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                      nostrum natus excepturi fuga."</i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -53,7 +56,7 @@
                   ></b-card-img-lazy>
                 </b-col>
                 <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
+                  <b-card-body body-class="text-center" title="Stan Smith">
                     <b-form-rating
                       id="r2"
                       variant="warning"
@@ -61,10 +64,12 @@
                       class="bg-transparent"
                       no-border
                       readonly
+                      show-value
+                      show-value-max
                     ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
+                    <b-card-text class="text-justify">
+                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                      nostrum natus excepturi fuga."</i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -88,7 +93,7 @@
                   ></b-card-img-lazy>
                 </b-col>
                 <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
+                  <b-card-body body-class="text-center" title="Bob Belcher">
                     <b-form-rating
                       id="r3"
                       variant="warning"
@@ -96,10 +101,12 @@
                       class="bg-transparent"
                       no-border
                       readonly
+                      show-value
+                      show-value-max
                     ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
+                    <b-card-text class="text-justify">
+                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                      nostrum natus excepturi fuga."</i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -120,7 +127,7 @@
                   ></b-card-img-lazy>
                 </b-col>
                 <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
+                  <b-card-body body-class="text-center" title="Jane Doe">
                     <b-form-rating
                       id="r4"
                       variant="warning"
@@ -128,77 +135,12 @@
                       class="bg-transparent"
                       no-border
                       readonly
+                      show-value
+                      show-value-max
                     ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
-                    </b-card-text>
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
-          </b-card-group>
-          <br />
-          <b-card-group deck>
-            <b-card
-              border-variant="dark"
-              bg-variant="light"
-              class="overflow-hidden card-width"
-              no-body
-            >
-              <b-row no-gutters>
-                <b-col md="6">
-                  <b-card-img-lazy
-                    src="https://picsum.photos/400/400/?image=81"
-                    alt="Image"
-                    class="rounded-0"
-                  ></b-card-img-lazy>
-                </b-col>
-                <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
-                    <b-form-rating
-                      id="r5"
-                      variant="warning"
-                      v-model="r5"
-                      class="bg-transparent"
-                      no-border
-                      readonly
-                    ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
-                    </b-card-text>
-                  </b-card-body>
-                </b-col>
-              </b-row>
-            </b-card>
-            <b-card
-              border-variant="dark"
-              bg-variant="light"
-              class="overflow-hidden card-width"
-              no-body
-            >
-              <b-row no-gutters>
-                <b-col md="6">
-                  <b-card-img-lazy
-                    src="https://picsum.photos/400/400/?image=72"
-                    alt="Image"
-                    class="rounded-0"
-                  ></b-card-img-lazy>
-                </b-col>
-                <b-col md="6">
-                  <b-card-body body-class="text-center" title="Horizontal Card">
-                    <b-form-rating
-                      id="r6"
-                      variant="warning"
-                      v-model="r6"
-                      class="bg-transparent"
-                      no-border
-                      readonly
-                    ></b-form-rating>
-                    <b-card-text>
-                      This is a wider card with supporting text as a natural lead-in to additional content.
-                      This content is a little bit longer.
+                    <b-card-text class="text-justify">
+                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                      nostrum natus excepturi fuga."</i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -207,59 +149,70 @@
           </b-card-group>
           <br />
           <b-button block v-b-toggle.collapse-form variant="outline-dark">Share your Story</b-button>
+          <br />
           <b-collapse id="collapse-form">
-            <b-card>
-              <form ref="form" @submit.stop.prevent="handleSubmit">
-                <b-form-group
-                  class="text-dark"
-                  label="Name"
-                  label-for="name"
-                  invalid-feedback="Name is required"
-                >
-                  <b-form-input id="name" v-model="name" required></b-form-input>
-                </b-form-group>
-                <b-form-group
-                  class="text-dark"
-                  label="Rating"
-                  label-for="rating"
-                  invalid-feedback="Rating is required"
-                >
-                  <b-form-rating id="rating" v-model="rating" variant="warning" class="mb-2"></b-form-rating>
-                </b-form-group>
-                <b-form-group
-                  class="text-dark"
-                  label="Comment"
-                  label-for="comment"
-                  invalid-feedback="Comment is required"
-                >
-                  <b-form-textarea
-                    id="textarea-state"
-                    v-model="comment"
-                    :state="comment.length >= 10"
-                    placeholder="Enter at least 10 characters"
-                    rows="3"
-                    required
-                  ></b-form-textarea>
-                </b-form-group>
-                <b-form-group
-                  class="text-dark"
-                  label="Upload an Image"
-                  label-for="image"
-                  invalid-feedback="Image is required"
-                >
-                  <b-form-file
-                    id="image"
-                    ref="fileInput"
-                    v-model="image"
-                    accept="image/*"
-                    :state="Boolean(image)"
-                    placeholder="Choose a file or drop it here..."
-                    drop-placeholder="Drop file here..."
-                  ></b-form-file>
-                  <div class="text-dark mt-3">Selected file: {{ image ? image.name : '' }}</div>
-                </b-form-group>
-              </form>
-            </b-card>
+            <form ref="form" @submit.stop.prevent="onSubmit">
+              <b-form-group
+                class="text-dark"
+                label="First & Last Name:"
+                label-for="name"
+              >
+                <b-form-input 
+                  id="name" 
+                  v-model="$v.form.name.$model"
+                  :state="validateState('name')"
+                  placeholder="Enter your name"
+                ></b-form-input>
+                <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+              </b-form-group>
+              <b-form-group
+                class="text-dark"
+                label="Rate your Experience:"
+                label-for="rating"
+              >
+                <b-form-rating 
+                  id="rating" 
+                  v-model="$v.form.rating.$model" 
+                  :state="validateState('rating')"
+                  variant="warning"
+                  show-value
+                  show-value-max
+                ></b-form-rating>
+                <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+              </b-form-group>
+              <b-form-group
+                class="text-dark"
+                label="Upload an Image:"
+                label-for="image"
+              >
+                <b-form-file
+                  id="image"
+                  v-model="$v.form.image.$model"
+                  accept="image/*, image/heic"
+                  :state="validateState('image')"
+                  placeholder="Choose an image or drop it here..."
+                  drop-placeholder="Drop image here..."
+                ></b-form-file>
+                <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+              </b-form-group>
+              <b-form-group
+                class="text-dark"
+                label="Describe your Experience:"
+                label-for="comment"
+              >
+                <b-form-textarea
+                  id="textarea-state"
+                  v-model="$v.form.comment.$model"
+                  :state="validateState('comment')"
+                  placeholder="Enter a description of your expeience"
+                  rows="3"
+                ></b-form-textarea>
+                <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
+              </b-form-group>
+              <div class="col-md-12 text-center">
+                <b-button type="submit" variant="dark">Submit</b-button>
+              </div>
+            </form>
           </b-collapse>
         </div>
       </div>
@@ -268,35 +221,65 @@
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+import { required, email, minValue} from 'vuelidate/lib/validators'
 export default {
   name: 'testimonials',
+  mixins: [validationMixin],
   data() {
     return {
-      image: null,
-      comment: '',
-      name: '',
-      rating: '',
+      form: {   
+        name: null,
+        rating: 5,
+        comment: null,
+        image: null
+      },     
       r1: 5,
       r2: 4,
-      r3: 5,
-      r4: 3,
-      r5: 5,
-      r6: 4,
+      r3: 3,
+      r4: 5
+    }
+  },
+  validations: {
+    form: {
+      name: {
+        required
+      },
+      rating: {
+        required
+      },
+      comment: {
+        required
+      },
+      image: {
+        required
+      }
     }
   },
   methods: {
-    
+    validateState(name) {
+      const { $dirty, $error } = this.$v.form[name]
+      return $dirty ? !$error : null
+    },
+    onSubmit(evt) {
+      evt.preventDefault();
+      this.$v.form.$touch();
+      if (this.$v.form.$anyError) {
+        return;
+      }
+      alert("Form submitted!\n" + JSON.stringify(this.form))
+    }
   }
 }
 </script>
 
 <style>
 .card-width {
-  max-width: 50%
+  max-width: 50%;
 }
 @media (max-width: 767px) {
-  .card-width{
-    max-width: 100%
+  .card-width {
+    max-width: 100%;
   }
 }
 </style>
