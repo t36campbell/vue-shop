@@ -1,61 +1,266 @@
 <template>
-  <div class="site-section bg-secondary" id="testimonials-section">
+  <div class="site-section bg-light" id="testimonials-section">
     <div class="container">
       <div class="row mb-5">
         <div class="col-12">
           <h3 class="section-sub-title text-center">Testimonials</h3>
           <h2 class="section-title text-center mb-3">Customer Reviews</h2>
-          <b-carousel
-            id="carousel-1"
-            v-model="slide"
-            :interval="4000"
-            controls
-            indicators
-            background="#ababab"
-            img-width="1024"
-            img-height="480"
-            style="text-shadow: 1px 1px 2px #333;"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
-          >
-            <!-- Text slides with image -->
-            <b-carousel-slide
-              caption="First slide"
-              text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-              img-src="https://picsum.photos/1024/480/?image=52"
-            ></b-carousel-slide>
-
-            <!-- Slides with custom text -->
-            <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-              <h1>Hello world!</h1>
-            </b-carousel-slide>
-
-            <!-- Slides with image only -->
-            <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-
-            <!-- Slides with img slot -->
-            <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-            <b-carousel-slide>
-              <template v-slot:img>
-                <img
-                  class="d-block img-fluid w-100"
-                  width="1024"
-                  height="480"
-                  src="https://picsum.photos/1024/480/?image=55"
-                  alt="image slot"
-                />
-              </template>
-            </b-carousel-slide>
-
-            <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-            <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-              <b-avatar variant="primary" text="JD">John Doe</b-avatar>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-                a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-              </p>
-            </b-carousel-slide>
-          </b-carousel>
+          <b-card-group deck>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=59"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r1"
+                      variant="warning"
+                      v-model="r1"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=3"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r2"
+                      variant="warning"
+                      v-model="r2"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </b-card-group>
+          <br />
+          <b-card-group deck>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=36"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r3"
+                      variant="warning"
+                      v-model="r3"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=18"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r4"
+                      variant="warning"
+                      v-model="r4"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </b-card-group>
+          <br />
+          <b-card-group deck>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=81"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r5"
+                      variant="warning"
+                      v-model="r5"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+            <b-card
+              border-variant="dark"
+              bg-variant="light"
+              class="overflow-hidden card-width"
+              no-body
+            >
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-img-lazy
+                    src="https://picsum.photos/400/400/?image=72"
+                    alt="Image"
+                    class="rounded-0"
+                  ></b-card-img-lazy>
+                </b-col>
+                <b-col md="6">
+                  <b-card-body body-class="text-center" title="Horizontal Card">
+                    <b-form-rating
+                      id="r6"
+                      variant="warning"
+                      v-model="r6"
+                      class="bg-transparent"
+                      no-border
+                      readonly
+                    ></b-form-rating>
+                    <b-card-text>
+                      This is a wider card with supporting text as a natural lead-in to additional content.
+                      This content is a little bit longer.
+                    </b-card-text>
+                  </b-card-body>
+                </b-col>
+              </b-row>
+            </b-card>
+          </b-card-group>
+          <br />
+          <b-button block v-b-toggle.collapse-form variant="outline-dark">Share your Story</b-button>
+          <b-collapse id="collapse-form">
+            <b-card>
+              <form ref="form" @submit.stop.prevent="handleSubmit">
+                <b-form-group
+                  class="text-dark"
+                  label="Name"
+                  label-for="name"
+                  invalid-feedback="Name is required"
+                >
+                  <b-form-input id="name" v-model="name" required></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  class="text-dark"
+                  label="Rating"
+                  label-for="rating"
+                  invalid-feedback="Rating is required"
+                >
+                  <b-form-rating id="rating" v-model="rating" variant="warning" class="mb-2"></b-form-rating>
+                </b-form-group>
+                <b-form-group
+                  class="text-dark"
+                  label="Comment"
+                  label-for="comment"
+                  invalid-feedback="Comment is required"
+                >
+                  <b-form-textarea
+                    id="textarea-state"
+                    v-model="comment"
+                    :state="comment.length >= 10"
+                    placeholder="Enter at least 10 characters"
+                    rows="3"
+                    required
+                  ></b-form-textarea>
+                </b-form-group>
+                <b-form-group
+                  class="text-dark"
+                  label="Upload an Image"
+                  label-for="image"
+                  invalid-feedback="Image is required"
+                >
+                  <b-form-file
+                    id="image"
+                    ref="fileInput"
+                    v-model="image"
+                    accept="image/*"
+                    :state="Boolean(image)"
+                    placeholder="Choose a file or drop it here..."
+                    drop-placeholder="Drop file here..."
+                  ></b-form-file>
+                  <div class="text-dark mt-3">Selected file: {{ image ? image.name : '' }}</div>
+                </b-form-group>
+              </form>
+            </b-card>
+          </b-collapse>
         </div>
       </div>
     </div>
@@ -66,9 +271,32 @@
 export default {
   name: 'testimonials',
   data() {
-    return {}
+    return {
+      image: null,
+      comment: '',
+      name: '',
+      rating: '',
+      r1: 5,
+      r2: 4,
+      r3: 5,
+      r4: 3,
+      r5: 5,
+      r6: 4,
+    }
   },
-
-  methods: {}
+  methods: {
+    
+  }
 }
 </script>
+
+<style>
+.card-width {
+  max-width: 50%
+}
+@media (max-width: 767px) {
+  .card-width{
+    max-width: 100%
+  }
+}
+</style>
