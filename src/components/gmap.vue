@@ -14,6 +14,7 @@
                   v-for="(m, index) in markers"
                   :position="m.position"
                   :clickable="true"
+                  :icon="m.icon"
                   @click="center=m.position, zoom=9"
                 ></gmap-marker>
               </gmap-map>
@@ -139,21 +140,59 @@ export default {
   data() {
     return {
       isBig: true,
+      zoom: 3,
+      currentPlace: null,
       center: { lat: 39.8283, lng: -98.5795 },
       markers: [
-        { position: { lat: 40.7060361, lng: -74.0088256 } },
-        { position: { lat: 25.7620955, lng: -80.1932258 } },
-        { position: { lat: 44.9750472, lng: -93.2503777 } },
-        { position: { lat: 32.7793704, lng: -96.8008565 } },
-        { position: { lat: 47.6172481, lng: -122.3520857 } },
-        { position: { lat: 34.1015088, lng: -118.333556 } }
+        { position: { lat: 40.7060361, lng: -74.0088256 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        },
+        { position: { lat: 25.7620955, lng: -80.1932258 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        },
+        { position: { lat: 44.9750472, lng: -93.2503777 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        },
+        { position: { lat: 32.7793704, lng: -96.8008565 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        },
+        { position: { lat: 47.6172481, lng: -122.3520857 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        },
+        { position: { lat: 34.1015088, lng: -118.333556 },
+          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        }
       ],
-      places: [],
-      currentPlace: null,
-      zoom: 3
+      places: []
     }
   },
-
+  mounted() {
+    if(localStorage.isBig) this.isBig = localStorage.isBig;
+    if(localStorage.zoom) this.zoom = localStorage.zoom;
+    if (localStorage.getItem('currentPlace')) {
+      try {
+        this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'));
+      } catch(e) {
+        localStorage.removeItem('currentPlace');
+      }
+    };
+    if (localStorage.getItem('center')) {
+      try {
+        this.center = JSON.parse(localStorage.getItem('center'));
+      } catch(e) {
+        localStorage.removeItem('center');
+      }
+    };
+    if (localStorage.getItem('places')) {
+      try {
+        let recents = JSON.parse(localStorage.getItem('places'))
+        this.places = recents;
+        this.markers.map(recents);
+      } catch(e) {
+        localStorage.removeItem('places');
+      }
+    };
+  },
   methods: {
     setPlace(place) {
       this.currentPlace = place
@@ -170,6 +209,7 @@ export default {
         this.center = marker
         this.zoom = 12
         this.isBig = false
+        this.saveMap()
       }
     },
     geolocate: function() {
@@ -184,7 +224,16 @@ export default {
         this.center = marker
         this.zoom = 12
         this.isBig = false
+        this.saveMap()
       })
+    },
+    saveMap() {
+      localStorage.isBig = this.isBig;
+      localStorage.zoom = this.zoom;
+      localStorage.setItem('currentPlace', JSON.stringify(this.currentPlace));
+      localStorage.setItem('center', JSON.stringify(this.center));
+      let recentPlaces = JSON.stringify(this.places.slice(Math.max(this.places.length - 5, 0)));
+      localStorage.setItem('places', recentPlaces);
     }
   }
 }

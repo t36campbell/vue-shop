@@ -210,6 +210,7 @@
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
               <div class="col-md-12 text-center">
+                <b-button @click="saveReview" variant="dark">Save for Later</b-button>
                 <b-button type="submit" variant="dark">Submit</b-button>
               </div>
             </form>
@@ -231,8 +232,8 @@ export default {
       form: {   
         name: null,
         rating: 5,
-        comment: null,
-        image: null
+        image: null,
+        comment: null
       },     
       r1: 5,
       r2: 4,
@@ -248,13 +249,18 @@ export default {
       rating: {
         required
       },
-      comment: {
+      image: {
         required
       },
-      image: {
+      comment: {
         required
       }
     }
+  },
+  mounted() {
+    if(localStorage.name) this.form.name = localStorage.name;
+    if(localStorage.rating) this.form.rating = localStorage.rating;
+    if(localStorage.comment) this.form.comment = localStorage.comment;
   },
   methods: {
     validateState(name) {
@@ -268,7 +274,13 @@ export default {
         return;
       }
       alert("Thank you for sharing your experience with us!")
-    }
+    },
+    saveReview() {
+      localStorage.name = this.form.name;
+      localStorage.rating = this.form.rating;
+      localStorage.comment = this.form.comment;
+      alert("Your information will be here when you come back")
+    }  
   }
 }
 </script>

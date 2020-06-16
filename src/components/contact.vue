@@ -181,6 +181,7 @@
                 </div>
               </div>
               <div class="col-md-12 text-center">
+                <b-button @click="saveContact" variant="dark">Save for Later</b-button>
                 <b-button type="submit" variant="dark">Submit</b-button>
               </div>
             </div>
@@ -222,6 +223,17 @@ export default {
           { text: 'Server Builds & Installs', value: 'server'}
         ]
     }
+  },
+  mounted() {
+    if(localStorage.date) this.form.date = localStorage.date;
+    if(localStorage.time) this.form.time = localStorage.time;
+    if(localStorage.fname) this.form.fname = localStorage.fname;
+    if(localStorage.lname) this.form.lname = localStorage.lname;
+    if(localStorage.phone) this.form.phone = localStorage.phone;
+    if(localStorage.email) this.form.email = localStorage.email;
+    if(localStorage.device_man) this.form.device_man = localStorage.device_man;
+    if(localStorage.device_mod) this.form.device_mod = localStorage.device_mod;
+    if(localStorage.service) this.form.service = localStorage.service;
   },
   validations: {
     form: {
@@ -267,7 +279,19 @@ export default {
         return;
       }
       alert("Form submitted!\n" + JSON.stringify(this.form))
-    }
+    },
+    saveContact() {
+      localStorage.date = this.form.date;
+      localStorage.time = this.form.time;
+      localStorage.fname = this.form.fname;
+      localStorage.lname = this.form.lname;
+      localStorage.phone = this.form.phone;
+      localStorage.email = this.form.email;
+      localStorage.device_man = this.form.device_man;
+      localStorage.device_mod = this.form.device_mod;
+      localStorage.service = this.form.service;
+      alert("Your information will be here when you come back")
+    } 
   }
 }
 </script>
