@@ -267,7 +267,7 @@ export default {
       if (this.$v.form.$anyError) {
         return;
       }
-      alert("Form submitted!\n" + JSON.stringify(this.form))
+      alert("Thank you for sharing your experience with us!")
     }
   }
 }
