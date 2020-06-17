@@ -205,7 +205,7 @@ export default {
         }
         this.currentPlace = marker
         this.markers.push({ position: marker })
-        this.places.push(this.currentPlace)
+        this.places.push({ position: this.currentPlace})
         this.center = marker
         this.zoom = 12
         this.isBig = false
@@ -220,7 +220,7 @@ export default {
         }
         this.currentPlace = marker
         this.markers.push({ position: marker })
-        this.places.push(this.currentPlace)
+        this.places.push({ position: this.currentPlace})
         this.center = marker
         this.zoom = 12
         this.isBig = false
