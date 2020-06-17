@@ -281,15 +281,15 @@ export default {
       alert("Form submitted!\n" + JSON.stringify(this.form))
     },
     saveContact() {
-      localStorage.date = this.form.date;
-      localStorage.time = this.form.time;
-      localStorage.fname = this.form.fname;
-      localStorage.lname = this.form.lname;
-      localStorage.phone = this.form.phone;
-      localStorage.email = this.form.email;
-      localStorage.device_man = this.form.device_man;
-      localStorage.device_mod = this.form.device_mod;
-      localStorage.service = this.form.service;
+      if(this.form.date) localStorage.date = this.form.date;
+      if(this.form.time) localStorage.time = this.form.time;
+      if(this.form.fname) localStorage.fname = this.form.fname;
+      if(this.form.lname) localStorage.lname = this.form.lname;
+      if(this.form.phone) localStorage.phone = this.form.phone;
+      if(this.form.email) localStorage.email = this.form.email;
+      if(this.form.device_man) localStorage.device_man = this.form.device_man;
+      if(this.form.devide_mod) localStorage.device_mod = this.form.device_mod;
+      if(this.form.service) localStorage.service = this.form.service;
       alert("Your information will be here when you come back")
     } 
   }

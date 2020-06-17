@@ -276,9 +276,9 @@ export default {
       alert("Thank you for sharing your experience with us!")
     },
     saveReview() {
-      localStorage.name = this.form.name;
-      localStorage.rating = this.form.rating;
-      localStorage.comment = this.form.comment;
+      if(this.form.name) localStorage.name = this.form.name;
+      if(this.form.rating) localStorage.rating = this.form.rating;
+      if(this.form.comment) localStorage.comment = this.form.comment;
       alert("Your information will be here when you come back")
     }  
   }
