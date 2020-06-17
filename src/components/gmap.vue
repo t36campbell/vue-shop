@@ -213,7 +213,8 @@ export default {
       }
     },
     geolocate: function() {
-      navigator.geolocation.getCurrentPosition(position => {
+      const options = {maximumAge:60000, timeout:5000, enableHighAccuracy:true};
+      navigator.geolocation.getCurrentPosition((position => {
         const marker = {
           lat: position.coords.latitude,
           lng: position.coords.longitude
@@ -225,7 +226,9 @@ export default {
         this.zoom = 12
         this.isBig = false
         this.saveMap()
-      })
+      }), (err) => {
+          console.log(err);
+      }, options)
     },
     saveMap() {
       localStorage.isBig = this.isBig;
