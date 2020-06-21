@@ -181,11 +181,17 @@
                 </div>
               </div>
               <div class="col-md-12 text-center">
-                <b-button
-                  class="btn btn-black btn-black ml-1 rounded-0"
-                  @click="saveContact"
-                >Save for Later</b-button>
-                <b-button class="btn btn-black btn-black ml-1 rounded-0" type="submit">Submit</b-button>
+                <div class="mx-auto row form-group justify-content-center">
+                  <b-button
+                    class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+                    @click="saveContact"
+                  >Save for Later</b-button>
+                  <br />
+                  <b-button
+                    class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+                    type="submit"
+                  >Submit</b-button>
+                </div>
               </div>
             </div>
           </b-form>

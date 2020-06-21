@@ -156,16 +156,16 @@
             </b-card>
           </b-card-group>
           <br />
-          <div class="col-12 text-center mb3">
+          <div class="col-12 text-center mb-3">
             <div class="mx-auto row form-group justify-content-center">
               <b-button
                 block
                 v-b-toggle.collapse-form
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
+                class="btn btn-black btn-outline-black mx-0 rounded-0"
               >Share your Story</b-button>
             </div>
           </div>
-          <b-collapse id="collapse-form">
+          <b-collapse id="collapse-form" class="mx-3">
             <form ref="form" @submit.stop.prevent="onSubmit">
               <b-form-group class="text-dark" label="First & Last Name:" label-for="name">
                 <b-form-input
@@ -213,11 +213,17 @@
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
               <div class="col-md-12 text-center">
-                <b-button
-                  class="btn btn-black btn-black ml-1 rounded-0"
-                  @click="saveReview"
-                >Save for Later</b-button>
-                <b-button class="btn btn-black btn-black ml-1 rounded-0" type="submit">Submit</b-button>
+                <div class="mx-auto row form-group justify-content-center">
+                  <b-button
+                    class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+                    @click="saveReview"
+                  >Save for Later</b-button>
+                  <br />
+                  <b-button
+                    class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+                    type="submit"
+                  >Submit</b-button>
+                </div>
               </div>
             </form>
           </b-collapse>
