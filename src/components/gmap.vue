@@ -5,24 +5,25 @@
         <div class="col-12">
           <h3 class="section-sub-title text-center">Store Locater</h3>
           <h2 class="section-title text-center mb-3">Find Nearest Location</h2>
-          <div class="row justify-content-center">
-            <div :class="[ isBig ? 'col-12' : 'col-md-6 col-sm-12' ]">
-              <br />
-              <gmap-map :center="center" :zoom="zoom" style="width:100%;  height: 500px">
-                <gmap-marker
-                  :key="index"
-                  v-for="(m, index) in markers"
-                  :position="m.position"
-                  :clickable="true"
-                  :icon="m.icon"
-                  @click="center=m.position, zoom=9"
-                ></gmap-marker>
-              </gmap-map>
-            </div>
-            <br />
-            <div v-if="currentPlace" class="col-md-6 col-sm-12 text-justify">
-              <br />
-              <h4>Nearest Location</h4>
+        </div>
+      </div>
+      <div class="card bg-white border-dark rounded-0">
+        <div class="row no-gutters align-items-start my-0 py-0">
+          <div :class="[ isBig ? 'col-12 my-0 py-0' : 'col-md-6 col-sm-12 my-0 py-0' ]">
+            <gmap-map :center="center" :zoom="zoom"  class="card-img rounded-0" style="width:100%;  height: 550px">
+              <gmap-marker
+                :key="index"
+                v-for="(m, index) in markers"
+                :position="m.position"
+                :clickable="true"
+                :icon="m.icon"
+                @click="center=m.position, zoom=9"
+              ></gmap-marker>
+            </gmap-map>
+          </div>
+          <div v-if="currentPlace" class="col-md-6 col-sm-12 text-justify">
+            <div class="card-body mx-3 px-0 my-0 py-0">
+              <h3 class="card-title text-black mt-3 mb-3 font-weight-bold text-center">Nearest Location</h3>
               <div role="tablist">
                 <b-card no-body border-variant="light" class="mb-1">
                   <b-card-header
@@ -177,26 +178,26 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-12 text-center mb-3">
+        <div class="mx-auto row form-group justify-content-center">
+          <gmap-autocomplete
+            class="col-md-6 text-black form-control rounded-0"
+            @place_changed="[setPlace($event), addMarker($event)]"
+          ></gmap-autocomplete>
+        </div>
+        <div class="mx-auto row form-group justify-content-center">
+          <b-button
+            class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+            @click="addMarker"
+          >Add Location</b-button>
           <br />
-          <div class="col-12 text-center mb3">
-            <div class="mx-auto row form-group justify-content-center">
-              <gmap-autocomplete
-                class="col-md-6 text-black form-control rounded-0"
-                @place_changed="[setPlace($event), addMarker($event)]"
-              ></gmap-autocomplete>
-            </div>
-            <div class="mx-auto row form-group justify-content-center">
-              <b-button
-                class="col-md-3 btn btn-black btn-black ml-1 rounded-0"
-                @click="addMarker"
-              >Add Location</b-button>
-              <br />
-              <b-button
-                class="col-md-3 btn btn-black btn-black ml-1 rounded-0"
-                @click="geolocate"
-              >Search Using My Location</b-button>
-            </div>
-          </div>
+          <b-button
+            class="col-md-3 btn btn-black btn-black mx-1 rounded-0"
+            @click="geolocate"
+          >Search Using My Location</b-button>
         </div>
       </div>
     </div>
