@@ -8,8 +8,8 @@
           <br />
           <br />
           <div class="card bg-white border-dark rounded-0">
-            <b-tabs content-class="mt-3" nav-class="tab" active-nav-item-class="bg-white rounded-0" fill>
-              <b-tab title="iPhone" title-link-class="tab" active>
+            <b-tabs v-model="tabIndex" content-class="mt-3" nav-class="tab" active-nav-item-class="bg-white rounded-0" fill>
+              <b-tab title="iPhone" title-link-class="tab" @click="saveTab(0)">
                 <h3 class="tab-title">iPhone 11 Pro Teardown</h3>
                 <p class="mx-5 text-justify">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -24,7 +24,7 @@
                   allowfullscreen
                 ></b-embed>
               </b-tab>
-              <b-tab title="iPad Pro" title-link-class="tab">
+              <b-tab title="iPad Pro" title-link-class="tab" @click="saveTab(1)">
                 <h3 class="tab-title">iPad Pro 12.9" 4th Gen Teardown</h3>
                 <p class="mx-5 text-justify">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -39,7 +39,7 @@
                   allowfullscreen
                 ></b-embed>
               </b-tab>
-              <b-tab title="Mac Pro" title-link-class="tab">
+              <b-tab title="Mac Pro" title-link-class="tab" @click="saveTab(2)">
                 <h3 class="tab-title">Mac Pro 2019 Teardown</h3>
                 <p class="mx-5 text-justify">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -54,7 +54,7 @@
                   allowfullscreen
                 ></b-embed>
               </b-tab>
-              <b-tab title="MacBook Pro" title-link-class="tab">
+              <b-tab title="MacBook Pro" title-link-class="tab" @click="saveTab(3)">
                 <h3 class="tab-title">MacBook Pro 16" 2019 Teardown</h3>
                 <p class="mx-5 text-justify">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,7 +79,20 @@
 
 <script>
 export default {
-  name: 'teardowns'
+  name: 'teardowns',
+  data() {
+    return {
+      tabIndex: 0,
+    }  
+  },
+  mounted() {
+    if (localStorage.tabIndex) this.tabIndex = Number(localStorage.tabIndex)
+  },
+  methods: {
+    saveTab(tab) {
+      localStorage.tabIndex = tab
+    }
+  }
 }
 </script>
 
