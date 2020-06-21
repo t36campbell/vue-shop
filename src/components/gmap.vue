@@ -24,9 +24,19 @@
               <br />
               <h4>Nearest Location</h4>
               <div role="tablist">
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.la variant="outline-dark">Los Angeles, CA</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.la
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >Los Angeles, CA</b-button>
                   </b-card-header>
                   <b-collapse id="la" visible accordion="locations" role="tabpanel">
                     <b-card-body>
@@ -39,11 +49,21 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.miami variant="outline-dark">Miami, FL</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.mia
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >Miami, FL</b-button>
                   </b-card-header>
-                  <b-collapse id="miami" accordion="locations" role="tabpanel">
+                  <b-collapse id="mia" accordion="locations" role="tabpanel">
                     <b-card-body>
                       <b-card-text>1234 S.Miami Avenue</b-card-text>
                       <b-card-text>Maimi, FL</b-card-text>
@@ -54,9 +74,19 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.min variant="outline-dark">Minneapolis, MN</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.min
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >Minneapolis, MN</b-button>
                   </b-card-header>
                   <b-collapse id="min" accordion="locations" role="tabpanel">
                     <b-card-body>
@@ -69,9 +99,19 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.ny variant="outline-dark">New York, NY</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.ny
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >New York, NY</b-button>
                   </b-card-header>
                   <b-collapse id="ny" accordion="locations" role="tabpanel">
                     <b-card-body>
@@ -84,9 +124,19 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.dal variant="outline-dark">Dallas, TX</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.dal
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >Dallas, TX</b-button>
                   </b-card-header>
                   <b-collapse id="dal" accordion="locations" role="tabpanel">
                     <b-card-body>
@@ -99,9 +149,19 @@
                     </b-card-body>
                   </b-collapse>
                 </b-card>
-                <b-card no-body class="mb-1">
-                  <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle.seattle variant="outline-dark">Seattle, WA</b-button>
+                <b-card no-body border-variant="light" class="mb-1">
+                  <b-card-header
+                    header-tag="header"
+                    header-border-variant="light"
+                    header-bg-variant="light"
+                    class="p-1"
+                    role="tab"
+                  >
+                    <b-button
+                      block
+                      v-b-toggle.seattle
+                      class="btn btn-black btn-outline-black ml-1 rounded-0"
+                    >Seattle, WA</b-button>
                   </b-card-header>
                   <b-collapse id="seattle" accordion="locations" role="tabpanel">
                     <b-card-body>
@@ -119,14 +179,23 @@
           </div>
           <br />
           <div class="col-12 text-center mb3">
-            <label>
+            <div class="mx-auto row form-group justify-content-center">
               <gmap-autocomplete
-                class="col-md-12 text-black"
+                class="col-md-6 text-black form-control rounded-0"
                 @place_changed="[setPlace($event), addMarker($event)]"
               ></gmap-autocomplete>
-            </label>
-            <b-button variant="dark" @click="addMarker">Add Location</b-button>
-            <b-button variant="dark" @click="geolocate">Search Using My Location</b-button>
+            </div>
+            <div class="mx-auto row form-group justify-content-center">
+              <b-button
+                class="col-md-3 btn btn-black btn-black ml-1 rounded-0"
+                @click="addMarker"
+              >Add Location</b-button>
+              <br />
+              <b-button
+                class="col-md-3 btn btn-black btn-black ml-1 rounded-0"
+                @click="geolocate"
+              >Search Using My Location</b-button>
+            </div>
           </div>
         </div>
       </div>
@@ -144,54 +213,60 @@ export default {
       currentPlace: null,
       center: { lat: 39.8283, lng: -98.5795 },
       markers: [
-        { position: { lat: 40.7060361, lng: -74.0088256 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 40.7060361, lng: -74.0088256 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         },
-        { position: { lat: 25.7620955, lng: -80.1932258 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 25.7620955, lng: -80.1932258 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         },
-        { position: { lat: 44.9750472, lng: -93.2503777 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 44.9750472, lng: -93.2503777 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         },
-        { position: { lat: 32.7793704, lng: -96.8008565 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 32.7793704, lng: -96.8008565 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         },
-        { position: { lat: 47.6172481, lng: -122.3520857 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 47.6172481, lng: -122.3520857 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         },
-        { position: { lat: 34.1015088, lng: -118.333556 },
-          icon: {url:  'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'}
+        {
+          position: { lat: 34.1015088, lng: -118.333556 },
+          icon: { url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' }
         }
       ],
       places: []
     }
   },
   mounted() {
-    if(localStorage.isBig) this.isBig = JSON.parse(localStorage.isBig);
-    if(localStorage.zoom) this.zoom = Number(localStorage.zoom);
+    if (localStorage.isBig) this.isBig = JSON.parse(localStorage.isBig)
+    if (localStorage.zoom) this.zoom = Number(localStorage.zoom)
     if (localStorage.getItem('currentPlace')) {
       try {
-        this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'));
-      } catch(e) {
-        localStorage.removeItem('currentPlace');
+        this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'))
+      } catch (e) {
+        localStorage.removeItem('currentPlace')
       }
-    };
+    }
     if (localStorage.getItem('center')) {
       try {
-        this.center = JSON.parse(localStorage.getItem('center'));
-      } catch(e) {
-        localStorage.removeItem('center');
+        this.center = JSON.parse(localStorage.getItem('center'))
+      } catch (e) {
+        localStorage.removeItem('center')
       }
-    };
+    }
     if (localStorage.getItem('places')) {
       try {
         let recents = JSON.parse(localStorage.getItem('places'))
-        this.places = recents;
-        this.markers.push(...recents);
-      } catch(e) {
-        localStorage.removeItem('places');
+        this.places = recents
+        this.markers.push(...recents)
+      } catch (e) {
+        localStorage.removeItem('places')
       }
-    };
+    }
   },
   methods: {
     setPlace(place) {
@@ -205,7 +280,7 @@ export default {
         }
         this.currentPlace = marker
         this.markers.push({ position: marker })
-        this.places.push({ position: this.currentPlace})
+        this.places.push({ position: this.currentPlace })
         this.center = marker
         this.zoom = 12
         this.isBig = false
@@ -213,30 +288,40 @@ export default {
       }
     },
     geolocate: function() {
-      const options = {maximumAge:60000, timeout:5000, enableHighAccuracy:true};
-      navigator.geolocation.getCurrentPosition((position => {
-        const marker = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        }
-        this.currentPlace = marker
-        this.markers.push({ position: marker })
-        this.places.push({ position: this.currentPlace})
-        this.center = marker
-        this.zoom = 12
-        this.isBig = false
-        this.saveMap()
-      }), (err) => {
-          console.log(err);
-      }, options)
+      const options = {
+        maximumAge: 60000,
+        timeout: 5000,
+        enableHighAccuracy: true
+      }
+      navigator.geolocation.getCurrentPosition(
+        position => {
+          const marker = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          }
+          this.currentPlace = marker
+          this.markers.push({ position: marker })
+          this.places.push({ position: this.currentPlace })
+          this.center = marker
+          this.zoom = 12
+          this.isBig = false
+          this.saveMap()
+        },
+        err => {
+          console.log(err)
+        },
+        options
+      )
     },
     saveMap() {
-      localStorage.isBig = this.isBig;
-      localStorage.zoom = this.zoom;
-      localStorage.setItem('currentPlace', JSON.stringify(this.currentPlace));
-      localStorage.setItem('center', JSON.stringify(this.center));
-      let recentPlaces = JSON.stringify(this.places.slice(Math.max(this.places.length - 5, 0)));
-      localStorage.setItem('places', recentPlaces);
+      localStorage.isBig = this.isBig
+      localStorage.zoom = this.zoom
+      localStorage.setItem('currentPlace', JSON.stringify(this.currentPlace))
+      localStorage.setItem('center', JSON.stringify(this.center))
+      let recentPlaces = JSON.stringify(
+        this.places.slice(Math.max(this.places.length - 5, 0))
+      )
+      localStorage.setItem('places', recentPlaces)
     }
   }
 }

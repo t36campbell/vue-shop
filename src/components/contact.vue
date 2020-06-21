@@ -12,12 +12,12 @@
                   <b-form-group
                       id="input-group-1"
                       class="col-md-12 text-black"
-                      label="Select a Date"
+                      label="Select a Date:"
                       label-for="datepicker"
                     >
                     <b-form-datepicker
                       id="datepicker"
-                      class="mb-2"
+                      class="mb-2 form-control rounded-0"
                       v-model="$v.form.date.$model"
                       :state="validateState('date')"
                       ></b-form-datepicker>
@@ -35,7 +35,7 @@
                     >
                     <b-form-timepicker
                       id="timepicker"
-                      class="mb-2"
+                      class="mb-2 form-control rounded-0"
                       locale="en-US"
                       v-model="$v.form.time.$model"
                       :state="validateState('time')"
@@ -181,8 +181,14 @@
                 </div>
               </div>
               <div class="col-md-12 text-center">
-                <b-button @click="saveContact" variant="dark">Save for Later</b-button>
-                <b-button type="submit" variant="dark">Submit</b-button>
+                <b-button 
+                  class="btn btn-black btn-black ml-1 rounded-0"
+                  @click="saveContact" 
+                >Save for Later</b-button>
+                <b-button 
+                  class="btn btn-black btn-black ml-1 rounded-0"
+                  type="submit" 
+                >Submit</b-button>
               </div>
             </div>
           </b-form>

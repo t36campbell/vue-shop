@@ -10,7 +10,7 @@
             <b-card
               border-variant="dark"
               bg-variant="light"
-              class="overflow-hidden card-width"
+              class="overflow-hidden card-width rounded-0"
               no-body
             >
               <b-row no-gutters>
@@ -34,8 +34,10 @@
                       show-value-max
                     ></b-form-rating>
                     <b-card-text class="text-justify">
-                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                      nostrum natus excepturi fuga."</i>
+                      <i>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        nostrum natus excepturi fuga."
+                      </i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -44,7 +46,7 @@
             <b-card
               border-variant="dark"
               bg-variant="light"
-              class="overflow-hidden card-width"
+              class="overflow-hidden card-width rounded-0"
               no-body
             >
               <b-row no-gutters>
@@ -68,8 +70,10 @@
                       show-value-max
                     ></b-form-rating>
                     <b-card-text class="text-justify">
-                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                      nostrum natus excepturi fuga."</i>
+                      <i>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        nostrum natus excepturi fuga."
+                      </i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -81,7 +85,7 @@
             <b-card
               border-variant="dark"
               bg-variant="light"
-              class="overflow-hidden card-width"
+              class="overflow-hidden card-width rounded-0"
               no-body
             >
               <b-row no-gutters>
@@ -105,8 +109,10 @@
                       show-value-max
                     ></b-form-rating>
                     <b-card-text class="text-justify">
-                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                      nostrum natus excepturi fuga."</i>
+                      <i>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        nostrum natus excepturi fuga."
+                      </i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -115,7 +121,7 @@
             <b-card
               border-variant="dark"
               bg-variant="light"
-              class="overflow-hidden card-width"
+              class="overflow-hidden card-width rounded-0"
               no-body
             >
               <b-row no-gutters>
@@ -139,8 +145,10 @@
                       show-value-max
                     ></b-form-rating>
                     <b-card-text class="text-justify">
-                      <i>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                      nostrum natus excepturi fuga."</i>
+                      <i>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                        nostrum natus excepturi fuga."
+                      </i>
                     </b-card-text>
                   </b-card-body>
                 </b-col>
@@ -148,31 +156,32 @@
             </b-card>
           </b-card-group>
           <br />
-          <b-button block v-b-toggle.collapse-form variant="outline-dark">Share your Story</b-button>
-          <br />
+          <div class="col-12 text-center mb3">
+            <div class="mx-auto row form-group justify-content-center">
+              <b-button
+                block
+                v-b-toggle.collapse-form
+                class="btn btn-black btn-outline-black ml-1 rounded-0"
+              >Share your Story</b-button>
+            </div>
+          </div>
           <b-collapse id="collapse-form">
             <form ref="form" @submit.stop.prevent="onSubmit">
-              <b-form-group
-                class="text-dark"
-                label="First & Last Name:"
-                label-for="name"
-              >
-                <b-form-input 
-                  id="name" 
+              <b-form-group class="text-dark" label="First & Last Name:" label-for="name">
+                <b-form-input
+                  id="name"
+                  class="form-control rounded-0"
                   v-model="$v.form.name.$model"
                   :state="validateState('name')"
                   placeholder="Enter your name"
                 ></b-form-input>
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
-              <b-form-group
-                class="text-dark"
-                label="Rate your Experience:"
-                label-for="rating"
-              >
-                <b-form-rating 
-                  id="rating" 
-                  v-model="$v.form.rating.$model" 
+              <b-form-group class="text-dark" label="Rate your Experience:" label-for="rating">
+                <b-form-rating
+                  id="rating"
+                  class="form-control rounded-0"
+                  v-model="$v.form.rating.$model"
                   :state="validateState('rating')"
                   variant="warning"
                   show-value
@@ -180,13 +189,10 @@
                 ></b-form-rating>
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
-              <b-form-group
-                class="text-dark"
-                label="Upload an Image:"
-                label-for="image"
-              >
+              <b-form-group class="text-dark" label="Upload an Image:" label-for="image">
                 <b-form-file
                   id="image"
+                  class="rounded-0"
                   v-model="$v.form.image.$model"
                   accept="image/*, image/heic"
                   :state="validateState('image')"
@@ -195,13 +201,10 @@
                 ></b-form-file>
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
-              <b-form-group
-                class="text-dark"
-                label="Describe your Experience:"
-                label-for="comment"
-              >
+              <b-form-group class="text-dark" label="Describe your Experience:" label-for="comment">
                 <b-form-textarea
                   id="textarea-state"
+                  class="form-control rounded-0"
                   v-model="$v.form.comment.$model"
                   :state="validateState('comment')"
                   placeholder="Enter a description of your expeience"
@@ -210,8 +213,14 @@
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
               <div class="col-md-12 text-center">
-                <b-button @click="saveReview" variant="dark">Save for Later</b-button>
-                <b-button type="submit" variant="dark">Submit</b-button>
+                <b-button 
+                  class="btn btn-black btn-black ml-1 rounded-0"
+                  @click="saveReview" 
+                >Save for Later</b-button>
+                <b-button 
+                  class="btn btn-black btn-black ml-1 rounded-0"
+                  type="submit" 
+                >Submit</b-button>
               </div>
             </form>
           </b-collapse>
@@ -223,18 +232,18 @@
 
 <script>
 import { validationMixin } from 'vuelidate'
-import { required, email, minValue} from 'vuelidate/lib/validators'
+import { required, email, minValue } from 'vuelidate/lib/validators'
 export default {
   name: 'testimonials',
   mixins: [validationMixin],
   data() {
     return {
-      form: {   
+      form: {
         name: null,
         rating: 5,
         image: null,
         comment: null
-      },     
+      },
       r1: 5,
       r2: 4,
       r3: 3,
@@ -258,9 +267,9 @@ export default {
     }
   },
   mounted() {
-    if(localStorage.name) this.form.name = localStorage.name;
-    if(localStorage.rating) this.form.rating = localStorage.rating;
-    if(localStorage.comment) this.form.comment = localStorage.comment;
+    if (localStorage.name) this.form.name = localStorage.name
+    if (localStorage.rating) this.form.rating = localStorage.rating
+    if (localStorage.comment) this.form.comment = localStorage.comment
   },
   methods: {
     validateState(name) {
@@ -268,19 +277,19 @@ export default {
       return $dirty ? !$error : null
     },
     onSubmit(evt) {
-      evt.preventDefault();
-      this.$v.form.$touch();
+      evt.preventDefault()
+      this.$v.form.$touch()
       if (this.$v.form.$anyError) {
-        return;
+        return
       }
-      alert("Thank you for sharing your experience with us!")
+      alert('Thank you for sharing your experience with us!')
     },
     saveReview() {
-      if(this.form.name) localStorage.name = this.form.name;
-      if(this.form.rating) localStorage.rating = this.form.rating;
-      if(this.form.comment) localStorage.comment = this.form.comment;
-      alert("Your information will be here when you come back")
-    }  
+      if (this.form.name) localStorage.name = this.form.name
+      if (this.form.rating) localStorage.rating = this.form.rating
+      if (this.form.comment) localStorage.comment = this.form.comment
+      alert('Your information will be here when you come back')
+    }
   }
 }
 </script>

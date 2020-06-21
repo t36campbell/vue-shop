@@ -22,7 +22,7 @@
               <h3>Apple iMac</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
               <h3>Apple iPads</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@
               <h3>Apple iPhone 6</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
               <h3>Apple iPads</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
               <h3>Apple MacBook Pro</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
               <h3>Apple Watch Series 3</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div>
-                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View</a>
+                <a href="#" class="btn btn-black btn-outline-black ml-1 rounded-0">View Item</a>
               </div>
             </div>
           </div>

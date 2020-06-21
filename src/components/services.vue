@@ -7,174 +7,228 @@
           <h2 class="section-title mb-3">We Offer Services</h2>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <img src="../assets/images/phone.jpg" alt="Image" class="img-fluid" />
+      <div class="card bg-white border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/phone.jpg" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">01.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Mobile Phone Repair</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Mobile Phone Repair</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <img src="../assets/images/tablet.jpg" alt="Image" class="img-fluid" />
+      <br />
+      <div class="card bg-light border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/tablet.jpg" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">02.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Tablet Repair</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Tablet Repair</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <img src="../assets/images/laptop.png" alt="Image" class="img-fluid" />
+      <br />
+      <div class="card bg-light border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/laptop.png" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">03.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Laptop Repair</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Laptop Repair</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <img src="../assets/images/desktop.jpg" alt="Image" class="img-fluid" />
+      <br />
+      <div class="card bg-light border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/desktop.jpg" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">04.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Computer Repair</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Computer Repair</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-5 mb-md-0">
-            <img src="../assets/images/pc.png" alt="Image" class="img-fluid" />
+      <br />
+      <div class="card bg-light border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/pc.png" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">05.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Custom PC Builds</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Custom PC Builds</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="py-4 mb-4">
-        <div class="row mx-4 my-4 product-item-2 align-items-start">
-          <div class="col-md-4 mb-md-0">
-            <img src="../assets/images/server.jpg" alt="Image" class="img-fluid" />
+      <br />
+      <div class="card bg-light border-dark rounded-0">
+        <div class="row no-gutters align-items-start">
+          <div class="col-md-4">
+            <img src="../assets/images/server.jpg" alt="Image" class="card-img rounded-0" />
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
-            <span class="number">06.</span>
-            <h3 class="text-black mb-4 font-weight-bold">Server Builds & Installs</h3>
-            <p class="mb-4">
-              Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-              cupiditate asperiores quasi accusantium voluptatum dolorem quae
-              sapiente voluptatem ratione odio iure blanditiis earum fuga
-              molestiae alias dicta perferendis inventore!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-              soluta assumenda sed optio, error at?
-            </p>
-            <p>
-              <a
-                class="btn btn-black btn-outline-black ml-1 rounded-0"
-                href="#schedule"
-                v-smooth-scroll
-              >Schedule an Appointment</a>
-            </p>
+            <div class="card-body">
+              <h3
+                class="card-title text-black mb-4 font-weight-bold text-center"
+              >Server Builds & Installs</h3>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <p class="card-text mx-4 text-justify">
+                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
+                cupiditate asperiores quasi accusantium voluptatum dolorem quae
+                sapiente voluptatem ratione odio iure blanditiis earum fuga
+                molestiae alias dicta perferendis inventore!
+              </p>
+              <div class="col-12 text-center">
+                <div class="mx-auto row form-group justify-content-center">
+                  <br />
+                  <a
+                    class="col-12 btn btn-black ml-1 rounded-0"
+                    href="#schedule"
+                    v-smooth-scroll
+                  >Schedule an Appointment</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <br />
     </div>
   </div>
 </template>

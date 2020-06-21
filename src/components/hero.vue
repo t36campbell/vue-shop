@@ -1,20 +1,30 @@
 <template>
   <div class="site-blocks-cover overlay">
     <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-11">
-          <div class="row mb-6">
-            <div class="col-md-8">
-              <h1 class="hero">Bob's Electronics Repair</h1>
+      <div class="row align-items-end justify-content-center hero-card">
+        <div class="col-12 text-center">
+          <h3 class="section-sub-title text-black">Local Repair Shop</h3>
+          <h2 class="section-title mb-3 text-light">Bob's Electronics Repair</h2>
+        </div>
+        <div class="card bg-transparent border-0 rounded-0">
+          <div class="mx-auto align-items-start row justify-content-center">
+            <div class="card-body col-md-6">
               <p class="mb-5 lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
-                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa.
+                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est.
                 Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
               </p>
-              <div>
+              <p class="mb-5 lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa.
+                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est.
+                Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
+              </p>
+              <div class="mx-auto row form-group justify-content-center">
+                <br />
                 <a
-                  class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block"
+                  class="col-12 btn btn-white btn-outline-white ml-1 rounded-0"
                   href="#schedule"
                   v-smooth-scroll
                 >Schedule an Appointment</a>
@@ -76,7 +86,6 @@ h5 {
   padding: 4em 0;
 }
 .site-blocks-cover {
-  margin-top: -5vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -96,36 +105,22 @@ h5 {
   top: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-.site-blocks-cover,
-.site-blocks-cover > .container > .row {
-  min-height: 600px;
-  height: calc(100vh);
+.hero-card {
+  margin-top: 73px;
 }
-.site-blocks-cover h1 {
-  font-size: 5rem;
-  font-weight: 400;
+@media (max-width: 992px) {
+  .hero-card {
+    margin-top: 40px;
+  }
+}
+h3.hero {
   color: var(--gray-1);
   font-weight: 900;
 }
-@media (max-width: 991.98px) {
-  .site-blocks-cover h1 {
-    font-size: 2rem;
-  }
-}
-.site-blocks-cover p {
+p.lead {
   color: var(--gray-1);
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 300;
-}
-.site-blocks-cover p.lead {
-  font-size: 20px;
-}
-.block-13 {
-  position: relative;
-  z-index: 1;
-}
-.block-12 {
-  position: relative;
 }
 </style>

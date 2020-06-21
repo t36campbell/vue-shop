@@ -2,7 +2,7 @@
   <div class="site-section bg-light" id="teardowns-section">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-12 text-center pull-down">
+        <div class="col-12 text-center">
           <h3 class="section-sub-title">Popular Teardowns</h3>
           <h2 class="section-title mb-3">Device Teardowns</h2>
           <br><br>
@@ -102,8 +102,5 @@ export default {
   background-color: var(--gray-2);
   color: var(--gray-5);
   text-decoration: none;
-}
-.pull-down {
-    margin-top: 6vh;
 }
 </style>
