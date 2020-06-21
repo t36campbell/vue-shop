@@ -18,7 +18,7 @@ import services from './services'
 import testimonials from './testimonials'
 import products from './products'
 import teardowns from './teardowns'
-import gmap from "./gmap"
+import gmap from './gmap'
 import contact from './contact'
 
 export default {

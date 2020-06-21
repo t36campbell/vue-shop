@@ -213,14 +213,11 @@
                 <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
               </b-form-group>
               <div class="col-md-12 text-center">
-                <b-button 
+                <b-button
                   class="btn btn-black btn-black ml-1 rounded-0"
-                  @click="saveReview" 
+                  @click="saveReview"
                 >Save for Later</b-button>
-                <b-button 
-                  class="btn btn-black btn-black ml-1 rounded-0"
-                  type="submit" 
-                >Submit</b-button>
+                <b-button class="btn btn-black btn-black ml-1 rounded-0" type="submit">Submit</b-button>
               </div>
             </form>
           </b-collapse>

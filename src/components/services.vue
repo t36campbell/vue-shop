@@ -51,9 +51,7 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Tablet Repair</h3>
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Tablet Repair</h3>
               <p class="card-text mx-4 text-justify">
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -88,9 +86,7 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Laptop Repair</h3>
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Laptop Repair</h3>
               <p class="card-text mx-4 text-justify">
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -125,9 +121,7 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Computer Repair</h3>
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Computer Repair</h3>
               <p class="card-text mx-4 text-justify">
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
@@ -162,9 +156,7 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Custom PC Builds</h3>
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Custom PC Builds</h3>
               <p class="card-text mx-4 text-justify">
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae

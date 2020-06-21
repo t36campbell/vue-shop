@@ -8,44 +8,44 @@
           <b-form @submit="onSubmit" class="col-12">
             <div class="row">
               <div class="col-md-6 col-sm-12">
-                <div class="row form-group">  
+                <div class="row form-group">
                   <b-form-group
-                      id="input-group-1"
-                      class="col-md-12 text-black"
-                      label="Select a Date:"
-                      label-for="datepicker"
-                    >
+                    id="input-group-1"
+                    class="col-md-12 text-black"
+                    label="Select a Date:"
+                    label-for="datepicker"
+                  >
                     <b-form-datepicker
                       id="datepicker"
                       class="mb-2 form-control rounded-0"
                       v-model="$v.form.date.$model"
                       :state="validateState('date')"
-                      ></b-form-datepicker>
+                    ></b-form-datepicker>
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div>  
+              </div>
               <div class="col-md-6 col-sm-12">
-                <div class="row form-group"> 
+                <div class="row form-group">
                   <b-form-group
-                      id="input-group-2"
-                      class="col-md-12 text-black"
-                      label="Select a Time"
-                      label-for="timepicker"
-                    >
+                    id="input-group-2"
+                    class="col-md-12 text-black"
+                    label="Select a Time"
+                    label-for="timepicker"
+                  >
                     <b-form-timepicker
                       id="timepicker"
                       class="mb-2 form-control rounded-0"
                       locale="en-US"
                       v-model="$v.form.time.$model"
                       :state="validateState('time')"
-                      ></b-form-timepicker>
+                    ></b-form-timepicker>
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
@@ -65,9 +65,9 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div>  
+              </div>
               <div class="col-md-6 col-sm-12">
-                <div class="row form-group">   
+                <div class="row form-group">
                   <b-form-group
                     id="input-group-4"
                     class="col-md-12 text-black"
@@ -103,9 +103,9 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div>  
+              </div>
               <div class="col-md-6 col-sm-12">
-                <div class="row form-group">   
+                <div class="row form-group">
                   <b-form-group
                     id="input-group-6"
                     class="col-md-12 text-black"
@@ -123,10 +123,10 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div> 
+              </div>
             </div>
-            <hr>
-            <div class="row"> 
+            <hr />
+            <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="row form-group">
                   <b-form-group
@@ -160,15 +160,15 @@
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
                   </b-form-group>
                 </div>
-              </div>  
+              </div>
               <div class="col-md-6 col-sm-12">
-                <div class="row form-group">   
-                <b-form-group
+                <div class="row form-group">
+                  <b-form-group
                     id="input-group-9"
                     class="col-md-12 text-black"
                     label="Select a Service"
                     label-for="input-group-6"
-                  > 
+                  >
                     <b-form-radio-group
                       id="radio-group-1"
                       v-model="$v.form.service.$model"
@@ -177,18 +177,15 @@
                       stacked
                     ></b-form-radio-group>
                     <b-form-invalid-feedback>This is a required field.</b-form-invalid-feedback>
-                </b-form-group>
+                  </b-form-group>
                 </div>
               </div>
               <div class="col-md-12 text-center">
-                <b-button 
+                <b-button
                   class="btn btn-black btn-black ml-1 rounded-0"
-                  @click="saveContact" 
+                  @click="saveContact"
                 >Save for Later</b-button>
-                <b-button 
-                  class="btn btn-black btn-black ml-1 rounded-0"
-                  type="submit" 
-                >Submit</b-button>
+                <b-button class="btn btn-black btn-black ml-1 rounded-0" type="submit">Submit</b-button>
               </div>
             </div>
           </b-form>
@@ -200,7 +197,7 @@
 
 <script>
 import { validationMixin } from 'vuelidate'
-import { required, email, minValue} from 'vuelidate/lib/validators'
+import { required, email, minValue } from 'vuelidate/lib/validators'
 export default {
   name: 'schedule',
   mixins: [validationMixin],
@@ -221,25 +218,25 @@ export default {
         service: null
       },
       options: [
-          { text: 'Mobile Phone Repair', value: 'mobile' },
-          { text: 'Tablet Repair', value: 'tablet' },
-          { text: 'Laptop Repair', value: 'laptop'},
-          { text: 'Computer Repair', value: 'pc'},
-          { text: 'Custom PC Builds', value: 'pc-build' },
-          { text: 'Server Builds & Installs', value: 'server'}
-        ]
+        { text: 'Mobile Phone Repair', value: 'mobile' },
+        { text: 'Tablet Repair', value: 'tablet' },
+        { text: 'Laptop Repair', value: 'laptop' },
+        { text: 'Computer Repair', value: 'pc' },
+        { text: 'Custom PC Builds', value: 'pc-build' },
+        { text: 'Server Builds & Installs', value: 'server' }
+      ]
     }
   },
   mounted() {
-    if(localStorage.date) this.form.date = localStorage.date;
-    if(localStorage.time) this.form.time = localStorage.time;
-    if(localStorage.fname) this.form.fname = localStorage.fname;
-    if(localStorage.lname) this.form.lname = localStorage.lname;
-    if(localStorage.phone) this.form.phone = localStorage.phone;
-    if(localStorage.email) this.form.email = localStorage.email;
-    if(localStorage.device_man) this.form.device_man = localStorage.device_man;
-    if(localStorage.device_mod) this.form.device_mod = localStorage.device_mod;
-    if(localStorage.service) this.form.service = localStorage.service;
+    if (localStorage.date) this.form.date = localStorage.date
+    if (localStorage.time) this.form.time = localStorage.time
+    if (localStorage.fname) this.form.fname = localStorage.fname
+    if (localStorage.lname) this.form.lname = localStorage.lname
+    if (localStorage.phone) this.form.phone = localStorage.phone
+    if (localStorage.email) this.form.email = localStorage.email
+    if (localStorage.device_man) this.form.device_man = localStorage.device_man
+    if (localStorage.device_mod) this.form.device_mod = localStorage.device_mod
+    if (localStorage.service) this.form.service = localStorage.service
   },
   validations: {
     form: {
@@ -279,25 +276,25 @@ export default {
       return $dirty ? !$error : null
     },
     onSubmit(evt) {
-      evt.preventDefault();
-      this.$v.form.$touch();
+      evt.preventDefault()
+      this.$v.form.$touch()
       if (this.$v.form.$anyError) {
-        return;
+        return
       }
-      alert("Form submitted!\n" + JSON.stringify(this.form))
+      alert('Form submitted!\n' + JSON.stringify(this.form))
     },
     saveContact() {
-      if(this.form.date) localStorage.date = this.form.date;
-      if(this.form.time) localStorage.time = this.form.time;
-      if(this.form.fname) localStorage.fname = this.form.fname;
-      if(this.form.lname) localStorage.lname = this.form.lname;
-      if(this.form.phone) localStorage.phone = this.form.phone;
-      if(this.form.email) localStorage.email = this.form.email;
-      if(this.form.device_man) localStorage.device_man = this.form.device_man;
-      if(this.form.devide_mod) localStorage.device_mod = this.form.device_mod;
-      if(this.form.service) localStorage.service = this.form.service;
-      alert("Your information will be here when you come back")
-    } 
+      if (this.form.date) localStorage.date = this.form.date
+      if (this.form.time) localStorage.time = this.form.time
+      if (this.form.fname) localStorage.fname = this.form.fname
+      if (this.form.lname) localStorage.lname = this.form.lname
+      if (this.form.phone) localStorage.phone = this.form.phone
+      if (this.form.email) localStorage.email = this.form.email
+      if (this.form.device_man) localStorage.device_man = this.form.device_man
+      if (this.form.devide_mod) localStorage.device_mod = this.form.device_mod
+      if (this.form.service) localStorage.service = this.form.service
+      alert('Your information will be here when you come back')
+    }
   }
 }
 </script>
