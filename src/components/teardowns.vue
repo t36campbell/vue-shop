@@ -13,7 +13,7 @@
           >
             <b-tab title="iPhone" title-link-class="tab" active>
               <h3 class="tab-title">iPhone 11 Pro Teardown</h3>
-              <p class="mb-5 text-justify lead ">
+              <p class="mb-5 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
                 Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
@@ -28,7 +28,7 @@
             </b-tab>
             <b-tab title="iPad Pro" title-link-class="tab">
               <h3 class="tab-title">iPad Pro 12.9" 4th Gen Teardown</h3>
-              <p class="mb-5 text-justify lead ">
+              <p class="mb-5 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
                 Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
@@ -43,7 +43,7 @@
             </b-tab>
             <b-tab title="Mac Pro" title-link-class="tab">
               <h3 class="tab-title">Mac Pro 2019 Teardown</h3>
-              <p class="mb-5 text-justify lead ">
+              <p class="mb-5 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
                 Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
@@ -58,7 +58,7 @@
             </b-tab>
             <b-tab title="MacBook Pro" title-link-class="tab">
               <h3 class="tab-title">MacBook Pro 16" 2019 Teardown</h3>
-              <p class="mb-5 text-justify lead ">
+              <p class="mb-5 text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa. 
                 Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est. 
