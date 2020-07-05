@@ -15,12 +15,6 @@
                 Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est.
                 Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
               </p>
-              <p class="mb-5 lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa.
-                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est.
-                Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
-              </p>
               <div class="mx-auto row form-group justify-content-center">
                 <br />
                 <a
@@ -108,7 +102,7 @@ h5 {
 .hero-card {
   margin-top: 73px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .hero-card {
     margin-top: 40px;
   }

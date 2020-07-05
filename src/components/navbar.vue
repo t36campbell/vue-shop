@@ -85,7 +85,7 @@ export default {
 .navbar-dark .navbar-nav .nav-link {
   color: var(--gray-1);
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .mobileMenu {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);

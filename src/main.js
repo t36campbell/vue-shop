@@ -1,6 +1,5 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import VueMq from 'vue-mq'
 import BootstrapVue from 'bootstrap-vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import Vuelidate from 'vuelidate'
@@ -22,7 +21,16 @@ Vue.use(VueGoogleMaps, {
     key: "AIzaSyA5-ODvORC_erNqFZ8Jrd1IAEvMmuLdiIo",
     libraries: "places" 
   }
-});
+})
+Vue.use(VueMq, {
+  breakpoints: {
+    xs: 450,
+    sm: 700,
+    md: 1000,
+    lg: 1250,
+    xl: Infinity,
+  }
+})
 new Vue({
   render: h => h(App),
 }).$mount('#app')
