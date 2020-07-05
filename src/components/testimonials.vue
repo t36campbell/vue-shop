@@ -235,7 +235,7 @@
 
 <script>
 import { validationMixin } from 'vuelidate'
-import { required, email, minValue } from 'vuelidate/lib/validators'
+import { required } from 'vuelidate/lib/validators'
 export default {
   name: 'testimonials',
   mixins: [validationMixin],

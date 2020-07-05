@@ -203,14 +203,11 @@
 
 <script>
 import { validationMixin } from 'vuelidate'
-import { required, email, minValue } from 'vuelidate/lib/validators'
+import { required, email} from 'vuelidate/lib/validators'
 export default {
   name: 'schedule',
   mixins: [validationMixin],
   data() {
-    const now = new Date()
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
-
     return {
       form: {
         date: null,

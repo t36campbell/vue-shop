@@ -44,6 +44,7 @@
 </template>
 
 <script>
+import $ from 'jquery'
 $(document).ready(function() {
   const $menu = $('.mobileMenu')
   const $toggle = $('.navbar-toggler')
