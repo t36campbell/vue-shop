@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "vue-shop-23178",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
