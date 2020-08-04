@@ -9,8 +9,11 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import * as VueGoogleMaps from "vue2-google-maps";
+// VGM Config
+import { vgmAPIKey } from './vgm-config'
 
 Vue.config.productionTip = false
+Vue.prototype.$apiKey = vgmAPIKey;
 Vue.use(BootstrapVue)
 Vue.use(vueSmoothScroll)
 Vue.use(Vuelidate)
@@ -18,7 +21,7 @@ Vue.use($)
 /* eslint-disable no-new */
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyA5-ODvORC_erNqFZ8Jrd1IAEvMmuLdiIo",
+    key: vgmAPIKey,
     libraries: "places" 
   }
 })

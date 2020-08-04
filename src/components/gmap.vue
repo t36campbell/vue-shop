@@ -217,37 +217,37 @@ export default {
         {
           position: { lat: 40.7060361, lng: -74.0088256 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         },
         {
           position: { lat: 25.7620955, lng: -80.1932258 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         },
         {
           position: { lat: 44.9750472, lng: -93.2503777 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         },
         {
           position: { lat: 32.7793704, lng: -96.8008565 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         },
         {
           position: { lat: 47.6172481, lng: -122.3520857 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         },
         {
           position: { lat: 34.1015088, lng: -118.333556 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
           }
         }
       ],
@@ -280,6 +280,7 @@ export default {
         localStorage.removeItem('places')
       }
     }
+    console.log(this.$apiKey)
   },
   methods: {
     setPlace(place) {

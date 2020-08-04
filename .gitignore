@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+# private configs
+vgm-config.js
+
 # local env files
 .env.local
 .env.*.local
