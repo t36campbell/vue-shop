@@ -280,7 +280,6 @@ export default {
         localStorage.removeItem('places')
       }
     }
-    console.log(this.$apiKey)
   },
   methods: {
     setPlace(place) {
