@@ -12,7 +12,7 @@
         >
           <b-navbar-nav class="navbar-nav align-self-stretch">
             <b-nav-item>
-              <a href="#" @click="top" v-smooth-scroll>
+              <a href="#" v-smooth-scroll>
                 <h3 class="nav-link">Home</h3>
               </a>
             </b-nav-item>
@@ -44,28 +44,10 @@
 </template>
 
 <script>
-import $ from 'jquery'
-$(document).ready(function() {
-  const $menu = $('.mobileMenu')
-  const $toggle = $('.navbar-toggler')
-
-  $toggle.on('click', () => {
-    $menu.toggleClass('open')
-  })
-  $menu.on('click', () => {
-    $menu.toggleClass('open')
-  })
-})
 export default {
   name: 'navbar',
   methods: {
-    top() {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      })
-    }
+    
   }
 }
 </script>

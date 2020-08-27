@@ -3,11 +3,11 @@ import VueMq from 'vue-mq'
 import BootstrapVue from 'bootstrap-vue'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import Vuelidate from 'vuelidate'
-import $ from 'jquery'
 import App from './App'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import router from './router';
 import * as VueGoogleMaps from "vue2-google-maps";
 // VGM Config
 import { vgmAPIKey } from './vgm-config'
@@ -17,7 +17,6 @@ Vue.prototype.$apiKey = vgmAPIKey;
 Vue.use(BootstrapVue)
 Vue.use(vueSmoothScroll)
 Vue.use(Vuelidate)
-Vue.use($)
 /* eslint-disable no-new */
 Vue.use(VueGoogleMaps, {
   load: {
@@ -35,5 +34,6 @@ Vue.use(VueMq, {
   }
 })
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app')
