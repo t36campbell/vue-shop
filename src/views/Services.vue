@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <hero/>
+  <div class="services">
+    <services/>
   </div>
 </template>
 
 <script>
-import hero from '../components/hero'
+import services from '../components/services'
 
 export default {
-  name: 'Home',
+  name: 'Services',
   props: [],
   components: {
-    hero,
+    services
   },
   data: () => ({
   }),

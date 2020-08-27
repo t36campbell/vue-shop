@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <hero/>
+  <div class="reviews">
+    <testimonials/>
   </div>
 </template>
 
 <script>
-import hero from '../components/hero'
+import testimonials from '../components/testimonials'
 
 export default {
-  name: 'Home',
+  name: 'Reviews',
   props: [],
   components: {
-    hero,
+    testimonials
   },
   data: () => ({
   }),

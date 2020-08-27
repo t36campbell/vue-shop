@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <hero/>
+  <div class="videos">
+    <teardowns/>
   </div>
 </template>
 
 <script>
-import hero from '../components/hero'
+import teardowns from '../components/teardowns'
 
 export default {
-  name: 'Home',
+  name: 'Products',
   props: [],
   components: {
-    hero,
+    teardowns
   },
   data: () => ({
   }),

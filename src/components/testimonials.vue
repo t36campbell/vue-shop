@@ -296,14 +296,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.card-width {
-  max-width: 50%;
-}
-@media (max-width: 767px) {
-  .card-width {
-    max-width: 100%;
-  }
-}
-</style>

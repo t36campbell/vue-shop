@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <hero/>
+  <div class="producst">
+    <products/>
   </div>
 </template>
 
 <script>
-import hero from '../components/hero'
+import products from '../components/products'
 
 export default {
-  name: 'Home',
+  name: 'Products',
   props: [],
   components: {
-    hero,
+    products
   },
   data: () => ({
   }),

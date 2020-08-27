@@ -1,17 +1,17 @@
 <template>
-  <div class="home">
-    <hero/>
+  <div class="stores">
+    <gmap/>
   </div>
 </template>
 
 <script>
-import hero from '../components/hero'
+import gmap from '../components/gmap'
 
 export default {
-  name: 'Home',
+  name: 'Stores',
   props: [],
   components: {
-    hero,
+    gmap
   },
   data: () => ({
   }),

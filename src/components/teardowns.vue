@@ -95,29 +95,3 @@ export default {
   }
 }
 </script>
-
-<style>
-:root {
-  --gray-1: #f6f6f6;
-  --gray-2: #bfbfbf;
-  --gray-3: #8c8c8c;
-  --gray-4: #5b5b5b;
-  --gray-5: #2f2f2f;
-  --green: #005a34;
-}
-.tab-title {
-  color: var(--gray-5);
-  font-weight: 700;
-}
-.tab {
-  background-color: var(--gray-2);
-  color: var(--gray-5);
-  text-decoration: none;
-  border-radius: 0;
-}
-.tab:hover {
-  color: black;
-  text-decoration: none;
-  border-radius: 0;
-}
-</style>
