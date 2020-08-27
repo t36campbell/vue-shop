@@ -3,6 +3,10 @@ import VueMq from 'vue-mq'
 import Vuelidate from 'vuelidate'
 import App from './App'
 import router from './router';
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 import * as VueGoogleMaps from "vue2-google-maps";
 
 // VGM Config
@@ -12,6 +16,7 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.prototype.$apiKey = vgmAPIKey;
+Vue.use(BootstrapVue)
 Vue.use(Vuelidate)
 /* eslint-disable no-new */
 Vue.use(VueGoogleMaps, {
