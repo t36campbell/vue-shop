@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueMq from 'vue-mq'
 import Vuelidate from 'vuelidate'
+import * as firebase from 'firebase/app';
+import 'firebase/analytics';
 import App from './App'
 import router from './router';
 import BootstrapVue from 'bootstrap-vue'
@@ -13,8 +15,19 @@ import * as VueGoogleMaps from "vue2-google-maps";
 import { vgmAPIKey } from './vgm-config'
 
 import vuetify from './plugins/vuetify';
-
-Vue.config.productionTip = false
+const firebaseConfig = {
+  apiKey: "AIzaSyCbn9aLLWWpYxFjSIUqPHQXikP-4HgpKJo",
+  authDomain: "modular-virtue-280119.firebaseapp.com",
+  databaseURL: "https://modular-virtue-280119.firebaseio.com",
+  projectId: "modular-virtue-280119",
+  storageBucket: "modular-virtue-280119.appspot.com",
+  messagingSenderId: "303207645239",
+  appId: "1:303207645239:web:71dd3bb23ebde7b24fbfb2",
+  measurementId: "G-NFN2VQ5GK1"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+Vue.config.productionTip = false;
 Vue.prototype.$apiKey = vgmAPIKey;
 Vue.use(BootstrapVue)
 Vue.use(Vuelidate)
