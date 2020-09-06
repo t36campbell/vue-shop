@@ -10,7 +10,12 @@
       <div class="card bg-white border-dark rounded-0">
         <div class="row no-gutters align-items-start my-0 py-0">
           <div :class="[ isBig ? 'col-12 my-0 py-0' : 'col-md-6 col-sm-12 my-0 py-0' ]">
-            <gmap-map :center="center" :zoom="zoom"  class="card-img rounded-0" style="width:100%;  height: 550px">
+            <gmap-map
+              :center="center"
+              :zoom="zoom"
+              class="card-img rounded-0"
+              style="width:100%;  height: 550px"
+            >
               <gmap-marker
                 :key="index"
                 v-for="(m, index) in markers"
@@ -23,7 +28,9 @@
           </div>
           <div v-if="currentPlace" class="col-md-6 col-sm-12 text-justify">
             <div class="card-body mx-3 px-0 my-0 py-0">
-              <h3 class="card-title text-black mt-3 mb-3 font-weight-bold text-center">Nearest Location</h3>
+              <h3 class="card-title text-black mt-3 mb-3 font-weight-bold text-center">
+                Nearest Location
+              </h3>
               <div role="tablist">
                 <b-card no-body border-variant="light" class="mb-1">
                   <b-card-header
@@ -44,7 +51,7 @@
                       <b-card-text>1234 Hollywood Boulevard</b-card-text>
                       <b-card-text>Los Angeles, CA</b-card-text>
                       <b-link
-                        @click="center={ lat: 34.1015088, lng: -118.333556 }, 
+                        @click="center={ lat: 34.1015088, lng: -118.333556 },
                         currentPlace={ lat: 34.1015088, lng: -118.333556 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -69,7 +76,7 @@
                       <b-card-text>1234 S.Miami Avenue</b-card-text>
                       <b-card-text>Maimi, FL</b-card-text>
                       <b-link
-                        @click="center={ lat: 25.7620955, lng: -80.1932258 }, 
+                        @click="center={ lat: 25.7620955, lng: -80.1932258 },
                         currentPlace={ lat: 25.7620955, lng: -80.1932258 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -94,7 +101,7 @@
                       <b-card-text>1234 S Washington Ave, Minneapolis, MN</b-card-text>
                       <b-card-text>Minneapolis, MN</b-card-text>
                       <b-link
-                        @click="center={ lat: 44.9750472, lng: -93.2503777 }, 
+                        @click="center={ lat: 44.9750472, lng: -93.2503777 },
                         currentPlace={ lat: 44.9750472, lng: -93.2503777 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -119,7 +126,7 @@
                       <b-card-text>1234 Wall Street</b-card-text>
                       <b-card-text>New York, NY</b-card-text>
                       <b-link
-                        @click="center={ lat: 40.7060361, lng: -74.0088256 }, 
+                        @click="center={ lat: 40.7060361, lng: -74.0088256 },
                         currentPlace={ lat: 40.7060361, lng: -74.0088256 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -144,7 +151,7 @@
                       <b-card-text>1234 Commerce Street</b-card-text>
                       <b-card-text>Dallas, TX</b-card-text>
                       <b-link
-                        @click="center={ lat: 32.7793704, lng: -96.8008565 }, 
+                        @click="center={ lat: 32.7793704, lng: -96.8008565 },
                         currentPlace={ lat: 32.7793704, lng: -96.8008565 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -169,7 +176,7 @@
                       <b-card-text>1234 Broad Street</b-card-text>
                       <b-card-text>Seattle, WA</b-card-text>
                       <b-link
-                        @click="center={ lat: 47.6172481, lng: -122.3520857 }, 
+                        @click="center={ lat: 47.6172481, lng: -122.3520857 },
                         currentPlace={ lat: 47.6172481, lng: -122.3520857 }"
                       >Show on Map</b-link>
                     </b-card-body>
@@ -217,125 +224,125 @@ export default {
         {
           position: { lat: 40.7060361, lng: -74.0088256 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
         },
         {
           position: { lat: 25.7620955, lng: -80.1932258 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
         },
         {
           position: { lat: 44.9750472, lng: -93.2503777 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
         },
         {
           position: { lat: 32.7793704, lng: -96.8008565 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
         },
         {
           position: { lat: 47.6172481, lng: -122.3520857 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
         },
         {
           position: { lat: 34.1015088, lng: -118.333556 },
           icon: {
-            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-          }
-        }
+            url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+          },
+        },
       ],
-      places: []
-    }
+      places: [],
+    };
   },
   mounted() {
-    if (localStorage.isBig) this.isBig = JSON.parse(localStorage.isBig)
-    if (localStorage.zoom) this.zoom = Number(localStorage.zoom)
+    if (localStorage.isBig) this.isBig = JSON.parse(localStorage.isBig);
+    if (localStorage.zoom) this.zoom = Number(localStorage.zoom);
     if (localStorage.getItem('currentPlace')) {
       try {
-        this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'))
+        this.currentPlace = JSON.parse(localStorage.getItem('currentPlace'));
       } catch (e) {
-        localStorage.removeItem('currentPlace')
+        localStorage.removeItem('currentPlace');
       }
     }
     if (localStorage.getItem('center')) {
       try {
-        this.center = JSON.parse(localStorage.getItem('center'))
+        this.center = JSON.parse(localStorage.getItem('center'));
       } catch (e) {
-        localStorage.removeItem('center')
+        localStorage.removeItem('center');
       }
     }
     if (localStorage.getItem('places')) {
       try {
-        let recents = JSON.parse(localStorage.getItem('places'))
-        this.places = recents
-        this.markers.push(...recents)
+        const recents = JSON.parse(localStorage.getItem('places'));
+        this.places = recents;
+        this.markers.push(...recents);
       } catch (e) {
-        localStorage.removeItem('places')
+        localStorage.removeItem('places');
       }
     }
   },
   methods: {
     setPlace(place) {
-      this.currentPlace = place
+      this.currentPlace = place;
     },
     addMarker() {
       if (this.currentPlace) {
         const marker = {
           lat: this.currentPlace.geometry.location.lat(),
-          lng: this.currentPlace.geometry.location.lng()
-        }
-        this.currentPlace = marker
-        this.markers.push({ position: marker })
-        this.places.push({ position: this.currentPlace })
-        this.center = marker
-        this.zoom = 12
-        this.isBig = false
-        this.saveMap()
+          lng: this.currentPlace.geometry.location.lng(),
+        };
+        this.currentPlace = marker;
+        this.markers.push({ position: marker });
+        this.places.push({ position: this.currentPlace });
+        this.center = marker;
+        this.zoom = 12;
+        this.isBig = false;
+        this.saveMap();
       }
     },
-    geolocate: function() {
+    geolocate() {
       const options = {
         maximumAge: 60000,
         timeout: 5000,
-        enableHighAccuracy: true
-      }
+        enableHighAccuracy: true,
+      };
       navigator.geolocation.getCurrentPosition(
-        position => {
+        (position) => {
           const marker = {
             lat: position.coords.latitude,
-            lng: position.coords.longitude
-          }
-          this.currentPlace = marker
-          this.markers.push({ position: marker })
-          this.places.push({ position: this.currentPlace })
-          this.center = marker
-          this.zoom = 12
-          this.isBig = false
-          this.saveMap()
+            lng: position.coords.longitude,
+          };
+          this.currentPlace = marker;
+          this.markers.push({ position: marker });
+          this.places.push({ position: this.currentPlace });
+          this.center = marker;
+          this.zoom = 12;
+          this.isBig = false;
+          this.saveMap();
         },
-        err => {
-          console.log(err)
+        (err) => {
+          console.log(err);
         },
-        options
-      )
+        options,
+      );
     },
     saveMap() {
-      localStorage.isBig = this.isBig
-      localStorage.zoom = this.zoom
-      localStorage.setItem('currentPlace', JSON.stringify(this.currentPlace))
-      localStorage.setItem('center', JSON.stringify(this.center))
-      let recentPlaces = JSON.stringify(
-        this.places.slice(Math.max(this.places.length - 5, 0))
-      )
-      localStorage.setItem('places', recentPlaces)
-    }
-  }
-}
+      localStorage.isBig = this.isBig;
+      localStorage.zoom = this.zoom;
+      localStorage.setItem('currentPlace', JSON.stringify(this.currentPlace));
+      localStorage.setItem('center', JSON.stringify(this.center));
+      const recentPlaces = JSON.stringify(
+        this.places.slice(Math.max(this.places.length - 5, 0)),
+      );
+      localStorage.setItem('places', recentPlaces);
+    },
+  },
+};
 </script>

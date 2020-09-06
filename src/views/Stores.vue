@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import gmap from '../components/gmap'
+import gmap from '../components/gmap.vue';
 
 export default {
   name: 'Stores',
   props: [],
   components: {
-    gmap
+    gmap,
   },
   data: () => ({
   }),

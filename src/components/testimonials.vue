@@ -234,8 +234,9 @@
 </template>
 
 <script>
-import { validationMixin } from 'vuelidate'
-import { required } from 'vuelidate/lib/validators'
+import { validationMixin } from 'vuelidate';
+import { required } from 'vuelidate/lib/validators';
+
 export default {
   name: 'testimonials',
   mixins: [validationMixin],
@@ -245,54 +246,56 @@ export default {
         name: null,
         rating: 5,
         image: null,
-        comment: null
+        comment: null,
       },
       r1: 5,
       r2: 4,
       r3: 3,
-      r4: 5
-    }
+      r4: 5,
+    };
   },
   validations: {
     form: {
       name: {
-        required
+        required,
       },
       rating: {
-        required
+        required,
       },
       image: {
-        required
+        required,
       },
       comment: {
-        required
-      }
-    }
+        required,
+      },
+    },
   },
   mounted() {
-    if (localStorage.name) this.form.name = localStorage.name
-    if (localStorage.rating) this.form.rating = localStorage.rating
-    if (localStorage.comment) this.form.comment = localStorage.comment
+    if (localStorage.name) this.form.name = localStorage.name;
+    if (localStorage.rating) this.form.rating = localStorage.rating;
+    if (localStorage.comment) this.form.comment = localStorage.comment;
   },
   methods: {
     validateState(name) {
-      const { $dirty, $error } = this.$v.form[name]
-      return $dirty ? !$error : null
+      const { $dirty, $error } = this.$v.form[name];
+      return $dirty ? !$error : null;
     },
     onSubmit(evt) {
-      evt.preventDefault()
-      this.$v.form.$touch()
+      evt.preventDefault();
+      this.$v.form.$touch();
       if (this.$v.form.$anyError) {
-        return
+        return;
       }
-      alert('Thank you for sharing your experience with us!')
+      // eslint-disable-next-line no-alert
+      alert('Thank you for sharing your experience with us!');
     },
     saveReview() {
-      if (this.form.name) localStorage.name = this.form.name
-      if (this.form.rating) localStorage.rating = this.form.rating
-      if (this.form.comment) localStorage.comment = this.form.comment
-      alert('Your information will be here when you come back')
-    }
-  }
-}
+      if (this.form.name) localStorage.name = this.form.name;
+      if (this.form.rating) localStorage.rating = this.form.rating;
+      if (this.form.comment) localStorage.comment = this.form.comment;
+      // eslint-disable-next-line no-alert
+      alert('Your information will be here when you come back');
+    },
+  },
+};
 </script>

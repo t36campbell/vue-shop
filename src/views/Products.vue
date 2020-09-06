@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import products from '../components/products'
+import products from '../components/products.vue';
 
 export default {
   name: 'Products',
   props: [],
   components: {
-    products
+    products,
   },
   data: () => ({
   }),

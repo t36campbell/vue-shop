@@ -35,7 +35,7 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-  
+
       <v-app-bar
         app
         clipped-left
@@ -43,11 +43,11 @@
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Application</v-toolbar-title>
       </v-app-bar>
-  
+
       <v-main>
         <router-view/>
       </v-main>
-  
+
       <v-footer app>
       </v-footer>
     </v-app>
@@ -68,7 +68,7 @@ export default {
   watch: {},
   mounted() {
     this.items = [
-      { icon: 'mdi-trending-up', text: 'Home', path: `/` },
+      { icon: 'mdi-trending-up', text: 'Home', path: '/' },
       { icon: 'mdi-youtube-subscription', text: 'Products', path: '/products' },
       { icon: 'mdi-image-multiple', text: 'Services', path: '/services' },
       { icon: 'mdi-image-multiple', text: 'Stores', path: '/stores' },
@@ -82,5 +82,5 @@ export default {
       router.push(path);
     },
   },
-}
+};
 </script>

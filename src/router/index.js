@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from '../views/Home';
-import Products from '../views/Products';
-import Services from '../views/Services';
-import Stores from '../views/Stores';
-import Reviews from '../views/Reviews';
-import Videos from '../views/Videos';
-import Contact from '../views/Contact';
+import Home from '../views/Home.vue';
+import Products from '../views/Products.vue';
+import Services from '../views/Services.vue';
+import Stores from '../views/Stores.vue';
+import Reviews from '../views/Reviews.vue';
+import Videos from '../views/Videos.vue';
+import Contact from '../views/Contact.vue';
 
 Vue.use(VueRouter);
 

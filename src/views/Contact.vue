@@ -202,8 +202,9 @@
 </template>
 
 <script>
-import { validationMixin } from 'vuelidate'
-import { required, email} from 'vuelidate/lib/validators'
+import { validationMixin } from 'vuelidate';
+import { required, email } from 'vuelidate/lib/validators';
+
 export default {
   name: 'schedule',
   mixins: [validationMixin],
@@ -218,7 +219,7 @@ export default {
         email: null,
         device_man: null,
         device_mod: null,
-        service: null
+        service: null,
       },
       options: [
         { text: 'Mobile Phone Repair', value: 'mobile' },
@@ -226,80 +227,82 @@ export default {
         { text: 'Laptop Repair', value: 'laptop' },
         { text: 'Computer Repair', value: 'pc' },
         { text: 'Custom PC Builds', value: 'pc-build' },
-        { text: 'Server Builds & Installs', value: 'server' }
-      ]
-    }
+        { text: 'Server Builds & Installs', value: 'server' },
+      ],
+    };
   },
   mounted() {
-    if (localStorage.date) this.form.date = localStorage.date
-    if (localStorage.time) this.form.time = localStorage.time
-    if (localStorage.fname) this.form.fname = localStorage.fname
-    if (localStorage.lname) this.form.lname = localStorage.lname
-    if (localStorage.phone) this.form.phone = localStorage.phone
-    if (localStorage.email) this.form.email = localStorage.email
-    if (localStorage.device_man) this.form.device_man = localStorage.device_man
-    if (localStorage.device_mod) this.form.device_mod = localStorage.device_mod
-    if (localStorage.service) this.form.service = localStorage.service
+    if (localStorage.date) this.form.date = localStorage.date;
+    if (localStorage.time) this.form.time = localStorage.time;
+    if (localStorage.fname) this.form.fname = localStorage.fname;
+    if (localStorage.lname) this.form.lname = localStorage.lname;
+    if (localStorage.phone) this.form.phone = localStorage.phone;
+    if (localStorage.email) this.form.email = localStorage.email;
+    if (localStorage.device_man) this.form.device_man = localStorage.device_man;
+    if (localStorage.device_mod) this.form.device_mod = localStorage.device_mod;
+    if (localStorage.service) this.form.service = localStorage.service;
   },
   validations: {
     form: {
       date: {
-        required
+        required,
       },
       time: {
-        required
+        required,
       },
       fname: {
-        required
+        required,
       },
       lname: {
-        required
+        required,
       },
       phone: {
-        required
+        required,
       },
       email: {
         required,
-        email
+        email,
       },
       device_man: {
-        required
+        required,
       },
       device_mod: {
-        required
+        required,
       },
       service: {
-        required
-      }
-    }
+        required,
+      },
+    },
   },
   methods: {
     validateState(name) {
-      const { $dirty, $error } = this.$v.form[name]
-      return $dirty ? !$error : null
+      const { $dirty, $error } = this.$v.form[name];
+      return $dirty ? !$error : null;
     },
     onSubmit(evt) {
-      evt.preventDefault()
-      this.$v.form.$touch()
+      evt.preventDefault();
+      this.$v.form.$touch();
       if (this.$v.form.$anyError) {
-        return
+        return;
       }
-      alert('Form submitted!\n' + JSON.stringify(this.form))
+      // eslint-disable-next-line no-alert
+      alert(`Form submitted!\n${JSON.stringify(this.form)}`);
     },
     saveContact() {
-      if (this.form.date) localStorage.date = this.form.date
-      if (this.form.time) localStorage.time = this.form.time
-      if (this.form.fname) localStorage.fname = this.form.fname
-      if (this.form.lname) localStorage.lname = this.form.lname
-      if (this.form.phone) localStorage.phone = this.form.phone
-      if (this.form.email) localStorage.email = this.form.email
-      if (this.form.device_man) localStorage.device_man = this.form.device_man
-      if (this.form.devide_mod) localStorage.device_mod = this.form.device_mod
-      if (this.form.service) localStorage.service = this.form.service
-      alert('Your information will be here when you come back')
-    }
-  }
-}
+      if (this.form.date) localStorage.date = this.form.date;
+      if (this.form.time) localStorage.time = this.form.time;
+      if (this.form.fname) localStorage.fname = this.form.fname;
+      if (this.form.lname) localStorage.lname = this.form.lname;
+      if (this.form.phone) localStorage.phone = this.form.phone;
+      if (this.form.email) localStorage.email = this.form.email;
+      if (this.form.device_man) localStorage.device_man = this.form.device_man;
+      if (this.form.devide_mod) localStorage.device_mod = this.form.device_mod;
+      if (this.form.service) localStorage.service = this.form.service;
+      // eslint-disable-next-line no-alert
+      alert('Your information will be here when you come back');
+    },
+  },
+};
 </script>
 
 <style>

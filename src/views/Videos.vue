@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import teardowns from '../components/teardowns'
+import teardowns from '../components/teardowns.vue';
 
 export default {
   name: 'Products',
   props: [],
   components: {
-    teardowns
+    teardowns,
   },
   data: () => ({
   }),

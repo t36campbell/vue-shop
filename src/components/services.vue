@@ -17,11 +17,17 @@
               <h3
                 class="card-title text-black mb-4 font-weight-bold text-center"
               >Mobile Phone Repair</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -50,11 +56,17 @@
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
               <h3 class="card-title text-black mb-4 font-weight-bold text-center">Tablet Repair</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -83,11 +95,17 @@
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
               <h3 class="card-title text-black mb-4 font-weight-bold text-center">Laptop Repair</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -115,12 +133,20 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Computer Repair</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">
+                Computer Repair
+              </h3>
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -148,12 +174,20 @@
           </div>
           <div class="col-md-8 ml-auto product-title-wrap">
             <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Custom PC Builds</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <h3 class="card-title text-black mb-4 font-weight-bold text-center">
+                Custom PC Builds
+              </h3>
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -184,11 +218,17 @@
               <h3
                 class="card-title text-black mb-4 font-weight-bold text-center"
               >Server Builds & Installs</h3>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
                 nostrum natus excepturi fuga.
               </p>
-              <p class="card-text mx-4 text-justify" v-if="$mq === 'lg' || $mq === 'xl'">
+              <p
+                class="card-text mx-4 text-justify"
+                v-if="$mq === 'lg' || $mq === 'xl'"
+              >
                 Et tempora id nostrum saepe amet doloribus deserunt totam officiis
                 cupiditate asperiores quasi accusantium voluptatum dolorem quae
                 sapiente voluptatem ratione odio iure blanditiis earum fuga
@@ -215,6 +255,6 @@
 
 <script>
 export default {
-  name: 'services'
-}
+  name: 'services',
+};
 </script>

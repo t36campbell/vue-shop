@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import services from '../components/services'
+import services from '../components/services.vue';
 
 export default {
   name: 'Services',
   props: [],
   components: {
-    services
+    services,
   },
   data: () => ({
   }),

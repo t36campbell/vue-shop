@@ -10,11 +10,17 @@
           <div class="mx-auto align-items-start row justify-content-center">
             <div class="card-body col-md-6">
               <p class="mb-5 lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Quis risus sed vulputate odio ut enim. Sed tempus urna et pharetra pharetra massa massa.
-                Nisl nisi scelerisque eu ultrices vitae auctor. Eu consequat ac felis donec et odio. Viverra maecenas accumsan lacus vel facilisis volutpat est.
-                Id cursus metus aliquam eleifend mi in. Nunc mattis enim ut tellus elementum sagittis. Mauris ultrices eros in cursus turpis massa.
-              </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis risus sed vulputate odio ut enim.
+                  Sed tempus urna et pharetra pharetra massa massa.
+                  Nisl nisi scelerisque eu ultrices vitae auctor.
+                  Eu consequat ac felis donec et odio.
+                  Viverra maecenas accumsan lacus vel facilisis volutpat est.
+                  Id cursus metus aliquam eleifend mi in.
+                  Nunc mattis enim ut tellus elementum sagittis.
+                  Mauris ultrices eros in cursus turpis massa.
+                </p>
               <div class="mx-auto row form-group justify-content-center">
                 <br />
                 <a
@@ -33,6 +39,6 @@
 
 <script>
 export default {
-  name: 'hero'
-}
+  name: 'hero',
+};
 </script>

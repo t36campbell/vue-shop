@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import testimonials from '../components/testimonials'
+import testimonials from '../components/testimonials.vue';
 
 export default {
   name: 'Reviews',
   props: [],
   components: {
-    testimonials
+    testimonials,
   },
   data: () => ({
   }),

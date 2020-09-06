@@ -102,7 +102,9 @@
         <div class="card bg-white border-dark rounded-0">
           <img src="../assets/images/macbook.jpg" alt="Image" class="card-img rounded-0" />
           <div class="card-body">
-            <h3 class="card-title text-black mb-4 font-weight-bold text-center">Apple MacBook Pro</h3>
+            <h3 class="card-title text-black mb-4 font-weight-bold text-center">
+              Apple MacBook Pro
+            </h3>
             <p class="card-text mx-4 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
               nostrum natus excepturi fuga.
@@ -122,7 +124,9 @@
         <div class="card bg-white border-dark rounded-0">
           <img src="../assets/images/watch.jpg" alt="Image" class="card-img rounded-0" />
           <div class="card-body">
-            <h3 class="card-title text-black mb-4 font-weight-bold text-center">Apple Watch Series 3</h3>
+            <h3 class="card-title text-black mb-4 font-weight-bold text-center">
+              Apple Watch Series 3
+            </h3>
             <p class="card-text mx-4 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
               nostrum natus excepturi fuga.
@@ -146,6 +150,6 @@
 
 <script>
 export default {
-  name: 'products'
-}
+  name: 'products',
+};
 </script>
