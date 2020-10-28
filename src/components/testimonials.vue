@@ -1,6 +1,6 @@
 <template>
-  <div class="site-section bg-light" id="testimonials-section">
-    <div class="container">
+  <div class="site-section">
+    <b-container fluid>
       <div class="row mb-5">
         <div class="col-12">
           <h3 class="section-sub-title text-center">Testimonials</h3>
@@ -9,7 +9,6 @@
           <b-card-group deck>
             <b-card
               border-variant="dark"
-              bg-variant="light"
               class="overflow-hidden card-width rounded-0"
               no-body
             >
@@ -229,7 +228,7 @@
           </b-collapse>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 

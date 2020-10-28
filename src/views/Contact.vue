@@ -1,6 +1,6 @@
 <template>
-  <div class="site-section bg-light" id="schedule">
-    <div class="container">
+  <div class="site-section">
+    <b-container fluid>
       <div class="row mb-5">
         <div class="col-12">
           <h3 class="section-sub-title text-center">Contact Form</h3>
@@ -197,7 +197,7 @@
           </b-form>
         </div>
       </div>
-    </div>
+    </b-container>
   </div>
 </template>
 
@@ -304,58 +304,3 @@ export default {
   },
 };
 </script>
-
-<style>
-:root {
-  --gray-1: #f6f6f6;
-  --gray-2: #bfbfbf;
-  --gray-3: #8c8c8c;
-  --gray-4: #5b5b5b;
-  --gray-5: #2f2f2f;
-  --green: #005a34;
-}
-.text-black {
-  color: var(--gray-5);
-}
-.form-control {
-  height: 43px;
-  font-family: Muli, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
-}
-.form-control:active,
-.form-control:focus {
-  border-color: var(--green);
-}
-.form-control:active,
-.form-control:focus,
-.form-control:hover {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-.site-section {
-  padding: 2.5em 0;
-}
-@media (min-width: 768px) {
-  .site-section {
-    padding: 5em 0;
-  }
-}
-.section-sub-title {
-  font-size: 13px;
-  color: var(--gray-4);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.section-title {
-  color: var(--gray-5);
-  font-size: 40px;
-  font-weight: 900;
-}
-@media (max-width: 991.98px) {
-  .section-title {
-    font-size: 30px;
-  }
-}
-</style>

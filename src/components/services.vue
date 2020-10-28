@@ -1,255 +1,258 @@
 <template>
-  <div class="site-section bg-light" id="services-section">
-    <div class="container">
+  <div class="site-section">
+    <b-container fluid>
       <div class="row mb-5">
         <div class="col-12 text-center">
           <h3 class="section-sub-title">Our Services</h3>
           <h2 class="section-title mb-3">We Offer Services</h2>
         </div>
       </div>
-      <div class="card bg-white border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/phone.jpg" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Mobile Phone Repair</h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/phone.jpg" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Mobile Phone Repair"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
       <br />
-      <div class="card bg-light border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/tablet.jpg" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Tablet Repair</h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/tablet.jpg" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Tablet Repair"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
       <br />
-      <div class="card bg-light border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/laptop.png" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">Laptop Repair</h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/laptop.png" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Laptop Repair"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
       <br />
-      <div class="card bg-light border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/desktop.jpg" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">
-                Computer Repair
-              </h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/desktop.jpg" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Computer Repair"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
       <br />
-      <div class="card bg-light border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/pc.png" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3 class="card-title text-black mb-4 font-weight-bold text-center">
-                Custom PC Builds
-              </h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/pc.png" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Custom PC Builds"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
       <br />
-      <div class="card bg-light border-dark rounded-0">
-        <div class="row no-gutters align-items-start">
-          <div class="col-md-4">
-            <img src="../assets/images/server.jpg" alt="Image" class="card-img rounded-0" />
-          </div>
-          <div class="col-md-8 ml-auto product-title-wrap">
-            <div class="card-body">
-              <h3
-                class="card-title text-black mb-4 font-weight-bold text-center"
-              >Server Builds & Installs</h3>
-              <p
+      <b-card no-body class="border-dark">
+        <b-row no-gutters>
+          <b-col md="4">
+            <b-card-img src="../assets/images/server.jpg" alt="Image" class="rounded-0">
+            </b-card-img>
+          </b-col>
+          <b-col md="8">
+            <b-card-body
+              title="Server Builds & Installs"
+              class="card-title text-black mb-4 text-center"
+            >
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'xs' || $mq === 'sm' || $mq === 'md'"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                nostrum natus excepturi fuga.
-              </p>
-              <p
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae nostrum natus excepturi fuga.
+              </b-card-text>
+              <b-card-text
                 class="card-text mx-4 text-justify"
                 v-if="$mq === 'lg' || $mq === 'xl'"
               >
-                Et tempora id nostrum saepe amet doloribus deserunt totam officiis
-                cupiditate asperiores quasi accusantium voluptatum dolorem quae
-                sapiente voluptatem ratione odio iure blanditiis earum fuga
-                molestiae alias dicta perferendis inventore!
-              </p>
-              <div class="col-12 text-center">
-                <div class="mx-auto row justify-content-center">
-                  <br />
-                  <a
-                    class="col-12 btn btn-black ml-1 rounded-0"
-                    href="#schedule"
-                    v-smooth-scroll
-                  >Schedule an Appointment</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-    </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                risus sed vulputate odio ut enim. Sed tempus urna et pharetra
+                pharetra massa massa. Nisl nisi scelerisque eu ultrices vitae
+                auctor. Eu consequat ac felis donec et odio. Viverra maecenas
+                accumsan lacus vel facilisis volutpat est. Id cursus metus
+                aliquam eleifend mi in. Nunc mattis enim ut tellus elementum
+                sagittis. Mauris ultrices eros in cursus turpis massa.
+              </b-card-text>
+              <b-button
+                class="col-md-12 btn btn-dark mt-8 rounded-0"
+                v-on:click="route('/contact')"
+                >View Item</b-button
+              >
+            </b-card-body>
+          </b-col>
+        </b-row>
+      </b-card>
+    </b-container>
   </div>
 </template>
 
