@@ -26,16 +26,11 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 Vue.config.productionTip = false;
-Vue.prototype.$apiKey = vgmAPIKey;
-Vue.use(BootstrapVue);
-Vue.use(LayoutPlugin);
-Vue.use(CardPlugin);
-Vue.use(Vuelidate);
 /* eslint-disable no-new */
 Vue.use(VueGoogleMaps, {
   load: {
     key: vgmAPIKey,
-    libraries: 'places',
+    libraries: ['places', 'geometry'],
   },
 });
 Vue.use(VueMq, {
@@ -47,6 +42,10 @@ Vue.use(VueMq, {
     xl: Infinity,
   },
 });
+Vue.use(BootstrapVue);
+Vue.use(LayoutPlugin);
+Vue.use(CardPlugin);
+Vue.use(Vuelidate);
 new Vue({
   router,
   vuetify,
